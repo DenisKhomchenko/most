@@ -1,0 +1,1846 @@
+<svg style="display:none">
+  <symbol viewBox="0 0 32 32" id="arrow--left">
+    <path d="M14.4371 16L21.0371 22.6L19.1518 24.4854L10.6664 16L19.1518 7.51468L21.0371 9.40002L14.4371 16Z" />
+  </symbol>
+  <symbol viewBox="0 0 32 32" id="arrow--right">
+    <path d="M17.5629 16L10.9629 9.39998L12.8482 7.51465L21.3336 16L12.8482 24.4853L10.9629 22.6L17.5629 16Z" />
+  </symbol>
+  <symbol viewBox="0 0 25 25" id="tooltip">
+    <path
+      d="M13 2C7.48 2 3 6.48 3 12C3 17.52 7.48 22 13 22C18.52 22 23 17.52 23 12C23 6.48 18.52 2 13 2ZM14 19H12V17H14V19ZM16.07 11.25L15.17 12.17C14.45 12.9 14 13.5 14 15H12V14.5C12 13.4 12.45 12.4 13.17 11.67L14.41 10.41C14.78 10.05 15 9.55 15 9C15 7.9 14.1 7 13 7C11.9 7 11 7.9 11 9H9C9 6.79 10.79 5 13 5C15.21 5 17 6.79 17 9C17 9.88 16.64 10.68 16.07 11.25Z" />
+  </symbol>
+  <symbol viewBox="0 0 25 25" id="telegram">
+    <path
+      d="M17.4151 7.65655L6.70611 11.4862C5.97526 11.7584 5.97949 12.1365 6.57202 12.3051L9.32145 13.1005L15.6828 9.37841C15.9836 9.20869 16.2585 9.29999 16.0326 9.48596L10.8786 13.7996H10.8774L10.8786 13.8001L10.6889 16.4283C10.9668 16.4283 11.0894 16.3101 11.2452 16.1706L12.5807 14.9663L15.3585 16.8691C15.8707 17.1307 16.2385 16.9963 16.366 16.4294L18.1895 8.45979C18.3761 7.76578 17.9038 7.45154 17.4151 7.65655V7.65655Z" />
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M12.5269 20.8385C17.3979 20.8385 21.3467 16.9935 21.3467 12.2504C21.3467 7.50726 17.3979 3.66222 12.5269 3.66222C7.65582 3.66222 3.70706 7.50726 3.70706 12.2504C3.70706 16.9935 7.65582 20.8385 12.5269 20.8385ZM12.5269 22.5007C18.3407 22.5007 23.0537 17.9115 23.0537 12.2504C23.0537 6.58924 18.3407 2 12.5269 2C6.71303 2 2 6.58924 2 12.2504C2 17.9115 6.71303 22.5007 12.5269 22.5007Z" />
+  </symbol>
+  <symbol viewBox="0 0 25 25" id="youtube">
+    <path
+      d="M20.4226 7.28678C20.3434 6.97637 20.1184 6.74199 19.8611 6.67012C19.4059 6.54199 17.1872 6.25033 12.4997 6.25033C7.81217 6.25033 5.59551 6.54199 5.13613 6.67012C4.88197 6.74095 4.65697 6.97533 4.57676 7.28678C4.46322 7.72845 4.16634 9.57949 4.16634 12.5003C4.16634 15.4212 4.46322 17.2712 4.57676 17.7149C4.65592 18.0243 4.88092 18.2587 5.13717 18.3295C5.59551 18.4587 7.81217 18.7503 12.4997 18.7503C17.1872 18.7503 19.4049 18.4587 19.8632 18.3305C20.1174 18.2597 20.3424 18.0253 20.4226 17.7139C20.5361 17.2722 20.833 15.417 20.833 12.5003C20.833 9.58366 20.5361 7.72949 20.4226 7.28678ZM22.4403 6.76908C22.9163 8.62533 22.9163 12.5003 22.9163 12.5003C22.9163 12.5003 22.9163 16.3753 22.4403 18.2316C22.1757 19.2576 21.4018 20.0649 20.4215 20.3378C18.6413 20.8337 12.4997 20.8337 12.4997 20.8337C12.4997 20.8337 6.36113 20.8337 4.5778 20.3378C3.59342 20.0607 2.82051 19.2545 2.55905 18.2316C2.08301 16.3753 2.08301 12.5003 2.08301 12.5003C2.08301 12.5003 2.08301 8.62533 2.55905 6.76908C2.82363 5.74303 3.59759 4.93574 4.5778 4.66283C6.36113 4.16699 12.4997 4.16699 12.4997 4.16699C12.4997 4.16699 18.6413 4.16699 20.4215 4.66283C21.4059 4.93991 22.1788 5.74616 22.4403 6.76908V6.76908ZM10.4163 16.1462V8.85449L16.6663 12.5003L10.4163 16.1462Z" />
+  </symbol>
+  <symbol viewBox="0 0 25 25" id="vk">
+    <path
+      d="M15.9688 2C17.9092 2 18.8422 2.18739 19.8117 2.72661C20.6909 3.2156 21.3862 3.93869 21.8564 4.85303C22.3749 5.86127 22.555 6.83167 22.555 8.84967V15.4876C22.555 17.5056 22.3749 18.4759 21.8564 19.4842C21.3862 20.3985 20.6909 21.1216 19.8117 21.6106C18.8422 22.1499 17.9092 22.3372 15.9688 22.3372H9.58622C7.64584 22.3372 6.71276 22.1499 5.7433 21.6106C4.86413 21.1216 4.16885 20.3985 3.69867 19.4842C3.18018 18.4759 3 17.5056 3 15.4876V8.84967C3 6.83167 3.18018 5.86127 3.69867 4.85303C4.16885 3.93869 4.86413 3.2156 5.7433 2.72661C6.71276 2.18739 7.64584 2 9.58622 2H15.9688ZM15.9688 3.84884H9.58622C7.91422 3.84884 7.25839 3.98055 6.58166 4.35694C6.01231 4.67362 5.57078 5.1328 5.26629 5.72493C4.90438 6.42873 4.77773 7.11078 4.77773 8.84967V15.4876C4.77773 17.2265 4.90438 17.9085 5.26629 18.6123C5.57078 19.2045 6.01231 19.6636 6.58166 19.9803C7.25839 20.3567 7.91422 20.4884 9.58622 20.4884H15.9688C17.6409 20.4884 18.2967 20.3567 18.9734 19.9803C19.5428 19.6636 19.9843 19.2045 20.2888 18.6123C20.6506 17.9085 20.7773 17.2265 20.7773 15.4876V8.84967C20.7773 7.11078 20.6506 6.42873 20.2888 5.72493C19.9843 5.1328 19.5428 4.67362 18.9734 4.35694C18.2967 3.98055 17.6409 3.84884 15.9688 3.84884V3.84884Z" />
+    <path
+      d="M13.4519 16.1711C9.44094 16.1711 7.00746 13.28 6.91211 8.4707H8.94357C9.00691 12.0035 10.5524 13.4968 11.7371 13.8046V8.4707H13.6839V11.5213C14.8267 11.3896 16.0227 10.0011 16.4248 8.4707H18.341C18.0343 10.3525 16.7322 11.735 15.8121 12.307C16.7329 12.7695 18.2143 13.9814 18.7857 16.1711H16.6795C16.2348 14.7074 15.1454 13.5795 13.6846 13.4256V16.1711H13.4519Z" />
+  </symbol>
+</svg>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Главная</title>
+    <script defer src="js/vendors/vendors.js"></script>
+    <script defer src="js/main_scripts/main_scripts.js"></script>
+    <link href="css/vendors/vendors.css" rel="stylesheet">
+    <link href="css/main_styles/main_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header" data-entity="header">
+      <div class="container header__container"><a class="logo header__logo" href="#"><img class="logo__pic"
+            src="assets/media/logo-compact.svg" alt="Most" /><img class="logo__label"
+            src="assets/media/logo-compact-label.svg" alt="Институт психологии и психотерапии" /></a><a
+          class="header__catalog-link" href="catalog.html"><span class="header__link-title">Курсы</span></a><button
+          class="header__burger" type="button" data-entity="burger"><span
+            class="header__burger-icon header__burger-icon_type_menu" data-entity="burger-menu-icon"></span><span
+            class="header__burger-icon header__burger-icon_type_close" data-entity="burger-close-icon"></span></button>
+        <div class="header__menu" data-entity="menu">
+          <div class="header__nav-wrapper">
+            <nav class="header__nav"><a class="header__nav-link header__nav-link_hidden-m"
+                href="catalog.html">Курсы</a><a class="header__nav-link" href="about.html">О школе</a><a
+                class="header__nav-link" href="news.html">Статьи</a><a class="header__nav-link"
+                href="specialists.html">Команда</a><a class="header__nav-link" href="contacts.html">Контакты</a></nav>
+          </div>
+          <div class="contacts header__contacts">
+            <div class="contacts__row"><span class="contacts__label">Телефон</span><a class="contacts__link"
+                href="tel:88003321781">8 (800) 332-17-81 </a></div>
+          </div>
+          <div class="socials header__socials"><a class="socials__partner" href="#"><span
+                class="socials__partner-label">при поддержке сервиса</span>
+              <div class="socials__partner-logo"> <img src="assets/media/logo-w-label.svg"
+                  alt="Most психологи онлайн" /></div>
+            </a>
+            <div class="socials__media"><a class="socials__media-item socials__media-item_type_yt" href="#"
+                target="_blank" rel="nofollow"></a><a class="socials__media-item socials__media-item_type_vk" href="#"
+                target="_blank" rel="nofollow"></a><a class="socials__media-item socials__media-item_type_tg" href="#"
+                target="_blank" rel="nofollow"></a></div>
+          </div><a class="header__login" href="#">Вход</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-intro">
+        <div class="container">
+          <div class="section-intro__inner">
+            <div class="slider section-intro__slider jsSliderIntro">
+              <div class="swiper slider__inner">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <div class="section-intro__item">
+                      <div class="section-intro__item-content">
+                        <div class="section-intro__labels">
+                          <div class="section-intro__label text-inter">Новое образование</div>
+                          <div class="section-intro__label section-intro__label--green text-inter">Практика </div>
+                        </div>
+                        <h2 class="section-intro__item-title">Обучение <br /> у экспертов <br /> с 20-летним <br />
+                          опытом</h2>
+                        <p class="section-intro__item-subititle text-inter">Преподаватели с современным подходом помогут
+                          легко освоить глубокие знания людям с разным уровнем подготовки. </p><a
+                          class="button button--border section-intro__item-button" href="#"><span
+                            class="button__text">Присоединяйся!</span></a>
+                      </div>
+                      <picture class="section-intro__img">
+                        <source srcset="assets/media/1--md.png" media="(max-width: 991px)" /><img
+                          src="assets/media/1.png" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="section-intro__item">
+                      <div class="section-intro__item-content">
+                        <div class="section-intro__labels">
+                          <div class="section-intro__label text-inter">Комплексному обучению</div>
+                        </div>
+                        <h2 class="section-intro__item-title">Поможем <br /> сформировать <br /> терапевтический <br />
+                          стиль</h2>
+                        <p class="section-intro__item-subititle text-inter">Супервизии очные и заочные, интервизии,
+                          специализации, терапевтические группы, интенсивы.</p><a
+                          class="button button--border section-intro__item-button" href="#"><span
+                            class="button__text">Присоединяйся!</span></a>
+                      </div>
+                      <picture class="section-intro__img">
+                        <source srcset="assets/media/2--md.png" media="(max-width: 991px)" /><img
+                          src="assets/media/2.png" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="section-intro__item">
+                      <div class="section-intro__item-content">
+                        <div class="section-intro__labels">
+                          <div class="section-intro__label text-inter">Онлайн</div>
+                        </div>
+                        <h2 class="section-intro__item-title">Зарабатывайте <br /> уже во время <br /> учёбы!</h2>
+                        <p class="section-intro__item-subititle text-inter">Успешные студенты получают работу и поток
+                          клиентов от партнерского сервиса Психологи Онлайн <a class="link">Mostme.ru</a></p><a
+                          class="button button--border section-intro__item-button" href="#"><span
+                            class="button__text">Присоединяйся!</span></a>
+                      </div>
+                      <picture class="section-intro__img">
+                        <source srcset="assets/media/3--md.png" media="(max-width: 991px)" /><img
+                          src="assets/media/3.png" alt="" />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__navigation">
+                  <div class="swiper-button-prev slider__button slider__button--prev"><svg
+                      class="icon slider__button-icon">
+                      <use xlink:href="#arrow--left"></use>
+                    </svg></div>
+                  <div class="swiper-button-next slider__button slider__button--next"><svg
+                      class="icon slider__button-icon">
+                      <use xlink:href="#arrow--right"></use>
+                    </svg></div>
+                </div>
+              </div>
+              <div class="swiper-pagination slider__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-path">
+        <div class="section-path__inner">
+          <div class="container section-path__container">
+            <h2 class="section-path__title">Ваш путь <br /> в психологию </h2>
+            <div class="section-path__content">
+              <div class="section-path__stages">
+                <div class="section-path__stage section-path__stage--1">
+                  <div class="section-path__stage-number">01</div>
+                  <div class="section-path__stage-main">
+                    <h4 class="section-path__stage-title">Практический <br /> подход</h4>
+                    <p class="section-path__stage-text">В нашем обучении мы делаем акцент на практику, обратную связь
+                      тратата. Или обучение у нас дает возможность получать реальные навыки и полноценно применять в
+                      работе или стать квалифицированным психологом</p>
+                  </div>
+                </div>
+                <div class="section-path__stage section-path__stage--2">
+                  <div class="section-path__stage-number">02</div>
+                  <div class="section-path__stage-main">
+                    <h4 class="section-path__stage-title">Стажировка и работа онлайн</h4>
+                    <p class="section-path__stage-text">Успешным студентам мы предоставляем поток клиентов на нашем
+                      сервисe</p>
+                  </div>
+                </div>
+                <div class="section-path__stage section-path__stage--3">
+                  <div class="section-path__stage-number">03</div>
+                  <div class="section-path__stage-main">
+                    <h4 class="section-path__stage-title">Мультимодальность</h4>
+                    <p class="section-path__stage-text">В нашем обучении мы делаем акцент на практику, обратную связь
+                      тратата</p>
+                  </div>
+                </div>
+              </div><img class="section-path__logo" src="assets/media/logo-w-label.svg" alt="" />
+              <div class="section-path__courses">
+                <div class="section-path__courses-title">Выбери <br /> верный <br /> курс </div><a
+                  class="section-path__course section-path__course--1" href="#"><img class="section-path__course-img"
+                    src="assets/media/course-1.svg" alt="" />
+                  <div class="section-path__course-main">
+                    <h4 class="section-path__course-title">Гештальт</h4>
+                    <div class="section-path__course-labels">
+                      <div class="section-path__course-label">здесь и сейчас</div>
+                      <div class="section-path__course-label">эмоции</div>
+                      <div class="section-path__course-label">опыт</div>
+                    </div>
+                  </div>
+                </a><a class="section-path__course section-path__course--2" href="#"><img
+                    class="section-path__course-img" src="assets/media/course-2.svg" alt="" />
+                  <div class="section-path__course-main">
+                    <h4 class="section-path__course-title">Интегративный подход </h4>
+                    <div class="section-path__course-labels">
+                      <div class="section-path__course-label">жизнь </div>
+                      <div class="section-path__course-label">жизнь </div>
+                      <div class="section-path__course-label">жизнь </div>
+                    </div>
+                  </div>
+                </a><a class="section-path__course section-path__course--3" href="#"><img
+                    class="section-path__course-img" src="assets/media/course-3.svg" alt="" />
+                  <div class="section-path__course-main">
+                    <h4 class="section-path__course-title">Экзистенциальный анализ</h4>
+                    <div class="section-path__course-labels">
+                      <div class="section-path__course-label">жизнь </div>
+                      <div class="section-path__course-label">смерть </div>
+                      <div class="section-path__course-label">смыслы </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <picture class="section-path__bg">
+                <source srcset="assets/media/1--md.svg" media="(max-width: 991px)" /><img src="assets/media/1.svg"
+                  alt="" />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tree">
+        <div class="container">
+          <div class="section-tree__inner">
+            <div class="section-tree__main">
+              <h3 class="section-tree__title">Мы поможем вам сориентироваться по нашим программам, исходя из ваших
+                предпочтений, целей и опыта.</h3>
+              <p class="section-tree__text text-sans">Нужен текст В нашем обучении мы делаем акцент на практику,
+                обратную связь тратата. Или обучение у нас дает возможность получать реальные навыки и полноценно
+                применять в работе или стать квалифицированным психологом</p><a class="button section-tree__button"
+                href="#"><span class="button__text">Консультация</span></a>
+            </div>
+            <picture class="section-tree__bg">
+              <source srcset="assets/media/tree--md-2.svg" media="(max-width: 991px)" /><img src="assets/media/tree.svg"
+                alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="section section-offers">
+        <div class="container">
+          <div class="section-offers__header">
+            <div class="section__title section__title--md">Успей купить !</div>
+          </div>
+          <div class="section-offers__inner">
+            <div class="slider section-offers__slider jsSliderOffers">
+              <div class="swiper slider__inner">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <div class="card-offer section-offers__card">
+                      <div class="card-offer__inner">
+                        <div class="card-offer__header">
+                          <div class="card-offer__type">Онлайн программа</div>
+                          <h3 class="card-offer__title">Работа с группой</h3>
+                          <p class="card-offer__description text-sans">9 модулей повышения квалификации</p>
+                        </div>
+                        <div class="card-offer__body">
+                          <div class="card-offer__prices">
+                            <div class="card-offer__price-old text-sans">15 000 ₽</div>
+                            <div class="card-offer__price text-sans">3 000 <span class="text-raleway">₽*</span></div>
+                          </div><a class="button button--yellow card-offer__button" href="#"><span
+                              class="button__text">Узнать больше</span><svg class="icon button__icon">
+                              <use xlink:href="#arrow--right"></use>
+                            </svg></a>
+                        </div>
+                        <div class="card-offer__subtitle text-sans">* скидка для первых 10 записавшихся</div>
+                      </div>
+                      <div class="card-offer__label">
+                        <div class="card-offer__label-text">23 <span>янв</span></div><img src="assets/media/label.svg"
+                          alt="" />
+                      </div><img class="card-offer__img" src="assets/media/main.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="card-offer section-offers__card">
+                      <div class="card-offer__inner">
+                        <div class="card-offer__header">
+                          <div class="card-offer__type">Онлайн программа</div>
+                          <h3 class="card-offer__title">Работа с группой</h3>
+                          <p class="card-offer__description text-sans">9 модулей повышения квалификации</p>
+                        </div>
+                        <div class="card-offer__body">
+                          <div class="card-offer__prices">
+                            <div class="card-offer__price-old text-sans">15 000 ₽</div>
+                            <div class="card-offer__price text-sans">3 000 <span class="text-raleway">₽*</span></div>
+                          </div><a class="button button--yellow card-offer__button" href="#"><span
+                              class="button__text">Узнать больше</span><svg class="icon button__icon">
+                              <use xlink:href="#arrow--right"></use>
+                            </svg></a>
+                        </div>
+                        <div class="card-offer__subtitle text-sans">* скидка для первых 10 записавшихся</div>
+                      </div>
+                      <div class="card-offer__label">
+                        <div class="card-offer__label-text">23 <span>янв</span></div><img src="assets/media/label.svg"
+                          alt="" />
+                      </div><img class="card-offer__img" src="assets/media/main.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="card-offer section-offers__card">
+                      <div class="card-offer__inner">
+                        <div class="card-offer__header">
+                          <div class="card-offer__type">Онлайн программа</div>
+                          <h3 class="card-offer__title">Работа с группой</h3>
+                          <p class="card-offer__description text-sans">9 модулей повышения квалификации</p>
+                        </div>
+                        <div class="card-offer__body">
+                          <div class="card-offer__prices">
+                            <div class="card-offer__price-old text-sans">15 000 ₽</div>
+                            <div class="card-offer__price text-sans">3 000 <span class="text-raleway">₽*</span></div>
+                          </div><a class="button button--yellow card-offer__button" href="#"><span
+                              class="button__text">Узнать больше</span><svg class="icon button__icon">
+                              <use xlink:href="#arrow--right"></use>
+                            </svg></a>
+                        </div>
+                        <div class="card-offer__subtitle text-sans">* скидка для первых 10 записавшихся</div>
+                      </div>
+                      <div class="card-offer__label">
+                        <div class="card-offer__label-text">23 <span>янв</span></div><img src="assets/media/label.svg"
+                          alt="" />
+                      </div><img class="card-offer__img" src="assets/media/main.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="card-offer section-offers__card">
+                      <div class="card-offer__inner">
+                        <div class="card-offer__header">
+                          <div class="card-offer__type">Онлайн программа</div>
+                          <h3 class="card-offer__title">Работа с группой</h3>
+                          <p class="card-offer__description text-sans">9 модулей повышения квалификации</p>
+                        </div>
+                        <div class="card-offer__body">
+                          <div class="card-offer__prices">
+                            <div class="card-offer__price-old text-sans">15 000 ₽</div>
+                            <div class="card-offer__price text-sans">3 000 <span class="text-raleway">₽*</span></div>
+                          </div><a class="button button--yellow card-offer__button" href="#"><span
+                              class="button__text">Узнать больше</span><svg class="icon button__icon">
+                              <use xlink:href="#arrow--right"></use>
+                            </svg></a>
+                        </div>
+                        <div class="card-offer__subtitle text-sans">* скидка для первых 10 записавшихся</div>
+                      </div>
+                      <div class="card-offer__label">
+                        <div class="card-offer__label-text">23 <span>янв</span></div><img src="assets/media/label.svg"
+                          alt="" />
+                      </div><img class="card-offer__img" src="assets/media/main.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <div class="card-offer section-offers__card">
+                      <div class="card-offer__inner">
+                        <div class="card-offer__header">
+                          <div class="card-offer__type">Онлайн программа</div>
+                          <h3 class="card-offer__title">Работа с группой</h3>
+                          <p class="card-offer__description text-sans">9 модулей повышения квалификации</p>
+                        </div>
+                        <div class="card-offer__body">
+                          <div class="card-offer__prices">
+                            <div class="card-offer__price-old text-sans">15 000 ₽</div>
+                            <div class="card-offer__price text-sans">3 000 <span class="text-raleway">₽*</span></div>
+                          </div><a class="button button--yellow card-offer__button" href="#"><span
+                              class="button__text">Узнать больше</span><svg class="icon button__icon">
+                              <use xlink:href="#arrow--right"></use>
+                            </svg></a>
+                        </div>
+                        <div class="card-offer__subtitle text-sans">* скидка для первых 10 записавшихся</div>
+                      </div>
+                      <div class="card-offer__label">
+                        <div class="card-offer__label-text">23 <span>янв</span></div><img src="assets/media/label.svg"
+                          alt="" />
+                      </div><img class="card-offer__img" src="assets/media/main.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__navigation">
+                <div class="swiper-button-prev slider__button slider__button--prev"><svg
+                    class="icon slider__button-icon">
+                    <use xlink:href="#arrow--left"></use>
+                  </svg></div>
+                <div class="swiper-pagination slider__pagination"></div>
+                <div class="swiper-button-next slider__button slider__button--next"><svg
+                    class="icon slider__button-icon">
+                    <use xlink:href="#arrow--right"></use>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-events">
+        <div class="section-events__container container">
+          <div class="section-events__header">
+            <h2 class="section__title section__title--md section-events__title">Ближайшие мероприятия</h2>
+            <div class="badges section-events__header-badges"><a class="badge is-active badges__item" href="#"><span
+                  class="badge__text">Любой</span></a><a class="badge badges__item" href="#"><span
+                  class="badge__text">Онлайн</span></a><a class="badge badges__item" href="#"><span
+                  class="badge__text">Квартирники</span></a></div>
+          </div>
+          <div class="section-events__inner">
+            <div class="section-events__main">
+              <div class="section-events__list">
+                <div class="section-events__label" data-category="1"><span>квартирник</span>
+                  <div class="section-events__tooltip"><svg class="icon">
+                      <use xlink:href="#tooltip"></use>
+                    </svg>
+                    <div class="section-events__tooltip-content">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum earum laborum
+                        eum neque aliquam nulla ratione vero aspernatur. Modi earum id laudantium eaque odit illo. Est
+                        perferendis repellendus deleniti.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-events__label section-events__label--online" data-category="2"><span>онлайн</span>
+                </div>
+                <div class="section-events__aside">
+                  <form action="#">
+                    <div class="section-events__aside-main">
+                      <div class="section-events__aside-label">Бесплатные</div>
+                      <div class="section-events__aside-title">Вебинары и квартирники онлайн. Подписаться на анонсы
+                      </div><input class="input input--white section-events__aside-input" type="text"
+                        placeholder="введите свой e-mail" /><button
+                        class="button button--white section-events__aside-button" type="button"><span
+                          class="button__text">Подписаться </span><svg class="icon button__icon">
+                          <use xlink:href="#arrow--right"></use>
+                        </svg></button>
+                    </div>
+                  </form>
+                  <div class="section-events__aside-social-block"><span>или следите в <br /> соцсетях</span>
+                    <div class="section-events__aside-social"><a class="section-events__aside-social-item" href="#">
+                        <svg class="icon">
+                          <use xlink:href="#vk"></use>
+                        </svg></a><a class="section-events__aside-social-item" href="#"> <svg class="icon">
+                          <use xlink:href="#telegram"></use>
+                        </svg></a><a class="section-events__aside-social-item" href="#"> <svg class="icon">
+                          <use xlink:href="#youtube"></use>
+                        </svg></a></div>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="1">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">14 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label"> <span>квартирник</span>
+                        <div class="card-event__tooltip"><svg class="icon">
+                            <use xlink:href="#tooltip"></use>
+                          </svg>
+                          <div class="card-event__tooltip-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum earum
+                              laborum eum neque aliquam nulla ratione vero aspernatur. Modi earum id laudantium eaque
+                              odit illo. Est perferendis repellendus deleniti.</p>
+                          </div>
+                        </div>
+                      </div><a class="card-event__title" href="#">Обучение наших специалистов по поиску первых
+                        клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price">500 ₽ </span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="2">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">25 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label card-event__label--online"><span>онлайн</span></div><a
+                        class="card-event__title" href="#">Обучение наших специалистов по поиску первых клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price card-event__price--old">1000
+                        ₽<span class="card-event__price-label">Free</span></span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="1">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">14 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label"> <span>квартирник</span>
+                        <div class="card-event__tooltip"><svg class="icon">
+                            <use xlink:href="#tooltip"></use>
+                          </svg>
+                          <div class="card-event__tooltip-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum earum
+                              laborum eum neque aliquam nulla ratione vero aspernatur. Modi earum id laudantium eaque
+                              odit illo. Est perferendis repellendus deleniti.</p>
+                          </div>
+                        </div>
+                      </div><a class="card-event__title" href="#">Обучение наших специалистов по поиску первых
+                        клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price">500 ₽ </span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="2">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">25 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label card-event__label--online"><span>онлайн</span></div><a
+                        class="card-event__title" href="#">Обучение наших специалистов по поиску первых клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price card-event__price--old">1000
+                        ₽<span class="card-event__price-label">Free</span></span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="1">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">14 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label"> <span>квартирник</span>
+                        <div class="card-event__tooltip"><svg class="icon">
+                            <use xlink:href="#tooltip"></use>
+                          </svg>
+                          <div class="card-event__tooltip-content">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum earum
+                              laborum eum neque aliquam nulla ratione vero aspernatur. Modi earum id laudantium eaque
+                              odit illo. Est perferendis repellendus deleniti.</p>
+                          </div>
+                        </div>
+                      </div><a class="card-event__title" href="#">Обучение наших специалистов по поиску первых
+                        клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price">500 ₽ </span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="card-event section-events__item" data-category="2">
+                  <div class="card-event__inner">
+                    <div class="card-event__date">25 <span>янв</span></div>
+                    <div class="card-event__info">
+                      <div class="card-event__label card-event__label--online"><span>онлайн</span></div><a
+                        class="card-event__title" href="#">Обучение наших специалистов по поиску первых клиентов.</a>
+                    </div>
+                    <div class="card-event__price-block"><span class="card-event__price card-event__price--old">1000
+                        ₽<span class="card-event__price-label">Free</span></span></div><a
+                      class="button card-event__button" href="#"><span class="button__text">Записаться</span><svg
+                        class="icon button__icon">
+                        <use xlink:href="#arrow--right"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-purpose">
+        <div class="section-purpose__container container">
+          <div class="section-purpose__inner">
+            <h2 class="section-purpose__title">цель института </h2>
+            <p class="section-purpose__text">Дать глубокие знания в выбранном подходе, помочь освоить практические
+              методы работы с клиентами, чтобы выпускники смело и уверенно приступали к практике</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section-specialist" data-entity="specialists-slider">
+        <div class="section-specialist__outer-indent">
+          <div class="container section__container">
+            <div class="section-specialist__header">
+              <h2 class="section__title">Кто задаёт курс?</h2><a class="section-specialist__link" href="#">Все
+                преподаватели</a>
+            </div>
+            <div class="slider section-specialist__slider">
+              <div class="slider__stage">
+                <div class="swiper" data-entity="slider-stage">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Ирина Исаева" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Ирина
+                              Исаева</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Элона Лавренова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Элона
+                              Лавренова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Елена Станковская" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Елена
+                              Станковская</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Татьяна Егорова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Татьяна
+                              Егорова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Светлана Мардоян" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Светлана
+                              Мардоян</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Ольга Борейко" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Ольга
+                              Борейко</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Татьяна Руданец" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Татьяна
+                              Руданец</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Оксана Боркова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Оксана
+                              Боркова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Евгения Кольцова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Евгения
+                              Кольцова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Ксения Крыласова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Ксения
+                              Крыласова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Тимур Аширбаев" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Тимур
+                              Аширбаев</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Анастасия Чукарина" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Анастасия
+                              Чукарина</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Елена Матвийчук" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Елена
+                              Матвийчук</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Альфина Соколовская" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Альфина
+                              Соколовская</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Анастасия Туркина" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Анастасия
+                              Туркина</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Татьяна Кропотова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Татьяна
+                              Кропотова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt=" Ирина Тимофеева" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name"> Ирина
+                              Тимофеева</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Татьяна Старшинова" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Татьяна
+                              Старшинова</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Елена Генс" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Елена
+                              Генс</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Ирина Шнайдер" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Ирина
+                              Шнайдер</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Инга Субботина" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Инга
+                              Субботина</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-specialist">
+                        <div class="card-specialist__inner">
+                          <div class="card-specialist__pic-wrapper"><img class="lozad card-specialist__pic"
+                              data-src="assets/media/specialist-example.jpg" alt="Ирина Марьина" /></div>
+                          <div class="card-specialist__video-toggler" data-entity="modal-video-executor"
+                            data-video-src="assets/media/video-example-2.mp4"><span
+                              class="lozad card-specialist__video-toggler-additional"
+                              data-background-image="assets/media/specialist-video-toggler-label.svg"> </span></div>
+                          <div class="card-specialist__content"><span class="card-specialist__name">Ирина
+                              Марьина</span><span class="card-specialist__role">Ректор</span>
+                            <p class="card-specialist__desc">У меня 23 года психологической практики и 11 лет
+                              управленческого стажа в Гештальт терапии. 20 лет работаю в сфере образования. Я преподаю
+                              программы по гештальт-терапии 1-ой, 2-ой и 3-ей ступеней с 2007 года. За это время
+                              программа обучения координально менялась 6 раз. Выпустила более 100 групп по
+                              гештальт-тепарии.</p>
+                            <div class="card-specialist__regalia-list">
+                              <div class="card-specialist__regalia-item"><span
+                                  class="lozad card-specialist__regalia-icon"
+                                  data-background-image="assets/media/emblem.png"></span>
+                                <p class="card-specialist__regalia-desc">Мне посчастливилось помочь своей стране: я
+                                  психолог-консультант Совета при Президенте РФ.</p>
+                              </div>
+                            </div><a class="card-specialist__link" href="#">узнать больше </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav">
+                <div class="slider__nav-button slider__nav-button_type_prev" data-entity="slider-nav-prev"></div>
+                <div class="slider__nav-button slider__nav-button_type_next" data-entity="slider-nav-next"></div>
+              </div>
+              <div class="slider__dot-pagination" data-entity="slider-pagination"></div>
+            </div>
+            <div class="section-specialist__features">
+              <div class="section-specialist__feature"><span
+                  class="section-specialist__feature-icon section-specialist__feature-icon_type_1"></span><span
+                  class="section-specialist__feature-desc">Терапевтической практики и обучения терапевтов</span></div>
+              <div class="section-specialist__feature"><span
+                  class="section-specialist__feature-icon section-specialist__feature-icon_type_2"></span><span
+                  class="section-specialist__feature-desc">Наши специалисты используют в своей работе современные
+                  подходы</span></div>
+              <div class="section-specialist__feature"><span
+                  class="section-specialist__feature-icon section-specialist__feature-icon_type_3"></span><span
+                  class="section-specialist__feature-desc">Специалисты имеют международный опыт </span></div>
+            </div>
+            <div class="section-specialist__tabs"><button class="section-specialist__tab section-specialist__tab_active"
+                type="button" data-entity="slider-tab" data-slide-index="0">Ирина Исаева</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="1">Элона
+                Лавренова</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="2">Елена Станковская</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="3">Татьяна Егорова</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="4">Светлана
+                Мардоян</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="5">Ольга Борейко</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="6">Татьяна Руданец</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="7">Оксана
+                Боркова</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="8">Евгения Кольцова</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="9">Ксения Крыласова</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="10">Тимур
+                Аширбаев</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="11">Анастасия Чукарина</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="12">Елена Матвийчук</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="13">Альфина
+                Соколовская</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="14">Анастасия Туркина</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="15">Татьяна Кропотова</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="16"> Ирина
+                Тимофеева</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="17">Татьяна Старшинова</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="18">Елена Генс</button><button
+                class="section-specialist__tab" type="button" data-entity="slider-tab" data-slide-index="19">Ирина
+                Шнайдер</button><button class="section-specialist__tab" type="button" data-entity="slider-tab"
+                data-slide-index="20">Инга Субботина</button><button class="section-specialist__tab" type="button"
+                data-entity="slider-tab" data-slide-index="21">Ирина Марьина</button></div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-features">
+        <div class="section-features__outer-indent">
+          <div class="container section__container">
+            <div class="section-features__inner">
+              <div class="section-features__row">
+                <div class="section-features__col section-features__col_type_left">
+                  <h2 class="section__title">Наши студенты получают привелегии на&nbsp;сервисе<a
+                      class="section-features__link" href="#">mostMe.ru</a></h2>
+                  <p class="section-features__desc">это сервис для коммуникации клиентов и психологов. Наши студенты
+                    получают привелегии на сервисе, что позволяет после обучения сразу же приступить к оплачиваемой
+                    практике:</p>
+                  <div class="socials section-features__partner"><a class="socials__partner" href="#">
+                      <div class="socials__partner-logo"> <img src="assets/media/logo-w-label.svg"
+                          alt="Most психологи онлайн" /></div>
+                    </a></div>
+                </div>
+                <div class="section-features__col section-features__col_type_right">
+                  <div class="section-features__items">
+                    <div class="section-features__item"><span
+                        class="section-features__item-icon section-features__item-icon_type_1"></span><span
+                        class="section-features__item-desc">Поиск первых клиентов в качестве студентов </span><span
+                        class="section-features__item-label">уникальная возможность</span></div>
+                    <div class="section-features__item"><span
+                        class="section-features__item-icon section-features__item-icon_type_2"></span><span
+                        class="section-features__item-desc">Привелегированный статус на сервисе и специальную пометку об
+                        обучении у нас.</span></div>
+                    <div class="section-features__item"><span
+                        class="section-features__item-icon section-features__item-icon_type_3"></span><span
+                        class="section-features__item-desc">Обучение наших специалистов по поиску первых клиентов.
+                      </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-reviews">
+        <div class="section-reviews__outer-indent">
+          <div class="container section__container">
+            <div class="section-reviews__header">
+              <h2 class="section__title">Что говорят студенты?</h2>
+              <div class="section-reviews__info"><span class="section-reviews__info-icon"></span><span
+                  class="section-reviews__info-text">Свои отзывы вы можите оставить&nbsp;на&nbsp;<a
+                    class="section-reviews__info-link" href="#">reviews.yandex.ru </a></span></div>
+            </div>
+            <div class="slider" data-entity="reviews-slider">
+              <div class="slider__stage">
+                <div class="swiper" data-entity="slider-stage">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="card-review" data-entity="card-review-text">
+                        <div class="card-review__inner">
+                          <div class="card-review__content" data-entity="content">
+                            <div class="card-review__text" data-entity="content-text">
+                              <p><b>После курсов удалось избежать нелюбимой работы! Первое впечатление хорошее, буду
+                                  копать глубже</b></p>
+                              <p>Читал другие отзывы и видел мнение о том, что всю информацию из видео можно найти в
+                                интернете. Это действительно правда, но только потому что в интернете можно найти вообще
+                                все при должном желании. Для меня это вообще не было проблемой, так как я прежде всего
+                                ориентировался на практику.Для меня это вообще не было проблемой, так как я Lorem ipsum
+                                dolor, sit amet consectetur adipisicing elit. Ad, ipsa rem! Corrupti consequuntur
+                                tempore quisquam vel impedit molestias tenetur veniam voluptatem! Velit quibusdam id eum
+                                ducimus inventore corrupti. Ea, eveniet sapiente dicta corporis, animi porro iure
+                                officiis aliquam doloremque at assumenda obcaecati odio quo ipsa sit alias dolore
+                                repellendus voluptate? </p>
+                            </div><button class="card-review__button-more" type="button" data-entity="expander">
+                              <div class="card-review__button-more-icon"><span
+                                  class="card-review__button-more-dots"><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span></span></div>
+                            </button>
+                          </div><a class="card-review__source" href="#">yandex.ru</a>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name" data-entity="author">Константин Константинопольский
+                            </div>
+                            <div class="card-review__author-pic-wrapper"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-review card-review_type_video" data-entity="card-review-video">
+                        <div class="card-review__inner">
+                          <div class="video card-review__video-player">
+                            <div class="video__pic-wrapper"><img class="video__pic"
+                                src="assets/media/video-preloader-example.jpg" alt="Константин Константинопольский" />
+                            </div><video class="vlite-js video__source" src="assets/media/video-example.mp4"
+                              data-entity="video" type="video/mp4"></video><button
+                              class="button_type_play video__button" type="button" data-entity="play-button"></button>
+                          </div>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name">Константин Константинопольский</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-review" data-entity="card-review-text">
+                        <div class="card-review__inner">
+                          <div class="card-review__content" data-entity="content">
+                            <div class="card-review__text" data-entity="content-text">
+                              <p><b>После курсов удалось избежать нелюбимой работы! Первое впечатление хорошее, буду
+                                  копать глубже</b></p>
+                              <p>Читал другие отзывы и видел мнение о том, что всю информацию из видео можно найти в
+                                интернете. Это действительно правда, но только потому что в интернете можно найти вообще
+                                все при должном желании.</p>
+                            </div><button class="card-review__button-more" type="button" data-entity="expander">
+                              <div class="card-review__button-more-icon"><span
+                                  class="card-review__button-more-dots"><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span></span></div>
+                            </button>
+                          </div><a class="card-review__source" href="#">irecommend.ru</a>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name" data-entity="author">Константин <br>
+                              Константинопольский</div>
+                            <div class="card-review__author-pic-wrapper"><img class="lozad card-review__author-pic"
+                                data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-review" data-entity="card-review-text">
+                        <div class="card-review__inner">
+                          <div class="card-review__content" data-entity="content">
+                            <div class="card-review__text" data-entity="content-text">
+                              <p><b>После курсов удалось избежать нелюбимой работы! Первое впечатление хорошее, буду
+                                  копать глубже</b></p>
+                              <p>Читал другие отзывы и видел мнение о том, что всю информацию из видео можно найти в
+                                интернете. Это действительно правда, но только потому что в интернете можно найти вообще
+                                все при должном желании.</p>
+                            </div><button class="card-review__button-more" type="button" data-entity="expander">
+                              <div class="card-review__button-more-icon"><span
+                                  class="card-review__button-more-dots"><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span></span></div>
+                            </button>
+                          </div><a class="card-review__source" href="#">irecommend.ru</a>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name" data-entity="author">Константин <br>
+                              Константинопольский</div>
+                            <div class="card-review__author-pic-wrapper"><img class="lozad card-review__author-pic"
+                                data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-review" data-entity="card-review-text">
+                        <div class="card-review__inner">
+                          <div class="card-review__content" data-entity="content">
+                            <div class="card-review__text" data-entity="content-text">
+                              <p><b>После курсов удалось избежать нелюбимой работы! Первое впечатление хорошее, буду
+                                  копать глубже</b></p>
+                              <p>Читал другие отзывы и видел мнение о том, что всю информацию из видео можно найти в
+                                интернете. Это действительно правда, но только потому что в интернете можно найти вообще
+                                все при должном желании.</p>
+                            </div><button class="card-review__button-more" type="button" data-entity="expander">
+                              <div class="card-review__button-more-icon"><span
+                                  class="card-review__button-more-dots"><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span></span></div>
+                            </button>
+                          </div><a class="card-review__source" href="#">irecommend.ru</a>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name" data-entity="author">Константин <br>
+                              Константинопольский</div>
+                            <div class="card-review__author-pic-wrapper"><img class="lozad card-review__author-pic"
+                                data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="card-review" data-entity="card-review-text">
+                        <div class="card-review__inner">
+                          <div class="card-review__content" data-entity="content">
+                            <div class="card-review__text" data-entity="content-text">
+                              <p><b>После курсов удалось избежать нелюбимой работы! Первое впечатление хорошее, буду
+                                  копать глубже</b></p>
+                              <p>Читал другие отзывы и видел мнение о том, что всю информацию из видео можно найти в
+                                интернете. Это действительно правда, но только потому что в интернете можно найти вообще
+                                все при должном желании.</p>
+                            </div><button class="card-review__button-more" type="button" data-entity="expander">
+                              <div class="card-review__button-more-icon"><span
+                                  class="card-review__button-more-dots"><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span><span
+                                    class="card-review__button-more-dot"></span></span></div>
+                            </button>
+                          </div><a class="card-review__source" href="#">irecommend.ru</a>
+                          <div class="card-review__author">
+                            <div class="card-review__author-name" data-entity="author">Константин <br>
+                              Константинопольский</div>
+                            <div class="card-review__author-pic-wrapper"><img class="lozad card-review__author-pic"
+                                data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__nav">
+                <div class="slider__nav-button slider__nav-button_type_prev" data-entity="slider-nav-prev"></div>
+                <div class="slider__nav-button slider__nav-button_type_next" data-entity="slider-nav-next"></div>
+              </div>
+              <div class="slider__dot-pagination" data-entity="slider-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-questions">
+        <div class="section-questions__outer-indent">
+          <div class="container section__container">
+            <div class="section-questions__inner">
+              <div class="section-questions__header">
+                <h2 class="section__title">Есть вопросы?</h2><button
+                  class="button button_type_default">Консультация</button>
+              </div>
+              <div class="section-questions__items">
+                <div class="section-questions__item">
+                  <div class="card-question" data-entity="card-question">
+                    <div class="card-question__inner"><button class="button_type_expand card-question__toggler"
+                        data-entity="card-question-toggler"></button>
+                      <div class="card-question__title">Как происходит оплата?</div>
+                      <div class="card-question__answer">
+                        <div class="card-question__answer-row">
+                          <div class="card-question__pic-wrapper"><img class="lozad card-question__pic"
+                              data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          <p class="card-question__text">Применение метода гештальт-терапии универсально: для
+                            индивидуальной, групповой, супружеской и парной психотерапии, в образовательных учреждениях
+                            и бизнес-организациях. Обучение в программе включает базовую теорию и методы
+                            гештальт-терапии, навыки гештальт-диагностики, принципы работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-questions__item">
+                  <div class="card-question card-question_expanded" data-entity="card-question">
+                    <div class="card-question__inner"><button class="button_type_expand card-question__toggler"
+                        data-entity="card-question-toggler"></button>
+                      <div class="card-question__title">Какие сертификаты получим после обучения?</div>
+                      <div class="card-question__answer">
+                        <div class="card-question__answer-row">
+                          <div class="card-question__pic-wrapper"><img class="lozad card-question__pic"
+                              data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          <p class="card-question__text">Применение метода гештальт-терапии универсально: для
+                            индивидуальной, групповой, супружеской и парной психотерапии, в образовательных учреждениях
+                            и бизнес-организациях. Обучение в программе включает базовую теорию и методы
+                            гештальт-терапии, навыки гештальт-диагностики, принципы работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-questions__item">
+                  <div class="card-question" data-entity="card-question">
+                    <div class="card-question__inner"><button class="button_type_expand card-question__toggler"
+                        data-entity="card-question-toggler"></button>
+                      <div class="card-question__title">Если ли лицензия на образовательную деятельность?</div>
+                      <div class="card-question__answer">
+                        <div class="card-question__answer-row">
+                          <div class="card-question__pic-wrapper"><img class="lozad card-question__pic"
+                              data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          <p class="card-question__text">Применение метода гештальт-терапии универсально: для
+                            индивидуальной, групповой, супружеской и парной психотерапии, в образовательных учреждениях
+                            и бизнес-организациях. Обучение в программе включает базовую теорию и методы
+                            гештальт-терапии, навыки гештальт-диагностики, принципы работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-questions__item">
+                  <div class="card-question" data-entity="card-question">
+                    <div class="card-question__inner"><button class="button_type_expand card-question__toggler"
+                        data-entity="card-question-toggler"></button>
+                      <div class="card-question__title">Через какие программы обучение проходит онлайн?</div>
+                      <div class="card-question__answer">
+                        <div class="card-question__answer-row">
+                          <div class="card-question__pic-wrapper"><img class="lozad card-question__pic"
+                              data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          <p class="card-question__text">Применение метода гештальт-терапии универсально: для
+                            индивидуальной, групповой, супружеской и парной психотерапии, в образовательных учреждениях
+                            и бизнес-организациях. Обучение в программе включает базовую теорию и методы
+                            гештальт-терапии, навыки гештальт-диагностики, принципы работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-questions__item">
+                  <div class="card-question" data-entity="card-question">
+                    <div class="card-question__inner"><button class="button_type_expand card-question__toggler"
+                        data-entity="card-question-toggler"></button>
+                      <div class="card-question__title">Какие сертификаты получим после обучения?</div>
+                      <div class="card-question__answer">
+                        <div class="card-question__answer-row">
+                          <div class="card-question__pic-wrapper"><img class="lozad card-question__pic"
+                              data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                          <p class="card-question__text">Применение метода гештальт-терапии универсально: для
+                            индивидуальной, групповой, супружеской и парной психотерапии, в образовательных учреждениях
+                            и бизнес-организациях. Обучение в программе включает базовую теорию и методы
+                            гештальт-терапии, навыки гештальт-диагностики, принципы работы</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="resolution section-questions__resolution">
+                <div class="resolution__title-wrapper"><span class="resolution__icon"></span>
+                  <h3 class="resolution__title">В&nbsp;соответствии с&nbsp;постановлением Правительства&nbsp;РФ
+                    №&nbsp;582 от&nbsp;10.07.2013&nbsp;г.</h3>
+                </div>
+                <p class="resolution__desc">Об утверждении Правил размещения на официальном сайте образовательной
+                  организации в информационно-телекоммуникационной сети «Интернет» и обновления информации об
+                  образовательной организации</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-news">
+        <div class="section-news__outer-indent">
+          <div class="container section__container">
+            <h2 class="section__title">Будь в курсе</h2>
+            <div class="section-news__items">
+              <div class="section-news__item section-news__item_wide section-news__item_order_first">
+                <div class="card-article card-article_type_secondary">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду </h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item section-news__item_order_first">
+                <div class="card-article">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду</h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item">
+                <div class="card-article">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду</h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item">
+                <div class="card-article">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду</h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item">
+                <div class="card-article">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду</h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item">
+                <div class="card-article">
+                  <div class="card-article__pic-wrapper"><img class="lozad card-article__pic"
+                      data-src="assets/media/section-news/temp.jpg" alt="Статья" /></div>
+                  <div class="card-article__content">
+                    <h3 class="card-article__title">Почему мечтать важнее, чем вкалывать, и что написано на роду</h3>
+                    <div class="card-article__author"><span class="card-article__label">автор</span><span
+                        class="card-article__author-name">Константин <br> Константинопольский</span>
+                      <div class="card-article__author-pic-wrapper"><img class="lozad card-article__author-pic"
+                          data-src="assets/media/section-news/author.png" alt="Автор" /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="section-news__item section-news__item_order_first">
+                <div class="card-article card-article_type_socials">
+                  <div class="card-article__title">Самое интересное мы публикуем в соцсетях</div>
+                  <div class="socials">
+                    <div class="socials__media"><a class="socials__media-item socials__media-item_type_yt-white"
+                        href="#" target="_blank" rel="nofollow"></a><a
+                        class="socials__media-item socials__media-item_type_vk-white" href="#" target="_blank"
+                        rel="nofollow"></a><a class="socials__media-item socials__media-item_type_tg-white" href="#"
+                        target="_blank" rel="nofollow"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div><button class="button_type_more section-news__button-more" type="button">Показать еще</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__sitemap">
+          <div class="container footer__container">
+            <div class="footer__row">
+              <div class="footer__col">
+                <div class="footer__menu footer__menu_type_main">
+                  <ul class="footer__nav">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="about.html">О школе</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="specialists.html">Команда</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="news.html">Статьи</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="contacts.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="footer__menu">
+                  <div class="footer__menu-title">Курсы </div>
+                  <ul class="footer__nav">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Долгосрочные курсы</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Краткосрочные курсы</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Супервизия</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Терапевтические
+                        группы</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Тренинги </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__col footer__col_size_l">
+                <div class="footer__menu">
+                  <div class="footer__menu-title">Направления</div>
+                  <ul class="footer__nav footer__nav_type_cols">
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Гештальт</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Прикладной анализ
+                        поведения</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Экзистенциальный
+                        анализ</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">ACT терапия</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Транзактный анализ</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Нейропсихология</a>
+                    </li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Клиническая
+                        психология</a></li>
+                    <li class="footer__nav-item"><a class="footer__nav-link" href="catalog.html">Психиатрия (медицина)
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__company-info">
+          <div class="container footer__container">
+            <div class="footer__row">
+              <div class="footer__col footer__col_order_last">
+                <div class="footer__politic">Посещая данный сайт вы даете свое согласие на обработку персональных
+                  данных<a class="footer__politic-link" href="#"> Политика онфиденциальности</a></div>
+              </div>
+              <div class="footer__col">
+                <div class="contacts"><span class="contacts__label">Телефон</span>
+                  <div class="contacts__row">
+                    <div class="contacts__col"><a class="contacts__link footer__tel" href="tel:88003321781">+7
+                        (985)-054-4664</a></div>
+                    <div class="contacts__col"><a class="contacts__link footer__tel" href="tel:88003321781">+7
+                        (995)-895-2167</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__col footer__col_size_m">
+                <div class="contacts"> <span class="contacts__label">Адрес</span>
+                  <p class="contacts__text">127473 Москва, ул. Селезневская, д. 11-а к.2 <br> Администрация: офис 521
+                    <br> Аудитория: офис 417</p>
+                </div>
+              </div>
+              <div class="footer__col footer__col_order_second-last footer__col_pos_bottom">
+                <div class="socials"><a class="socials__partner" href="#"><span class="socials__partner-label">при
+                      поддержке сервиса</span>
+                    <div class="socials__partner-logo"> <img src="assets/media/logo-w-label.svg"
+                        alt="Most психологи онлайн" /></div>
+                  </a>
+                  <div class="socials__media"><a class="socials__media-item socials__media-item_type_yt" href="#"
+                      target="_blank" rel="nofollow"></a><a class="socials__media-item socials__media-item_type_vk"
+                      href="#" target="_blank" rel="nofollow"></a><a
+                      class="socials__media-item socials__media-item_type_tg" href="#" target="_blank"
+                      rel="nofollow"></a></div>
+                </div>
+              </div>
+              <div class="footer__col footer__col_order_last">
+                <div class="footer__rights"><span class="footer__rights-year">2022 ©</span><span
+                    class="footer__rights-owner">ООО "Высшая психологическая школа"</span></div>
+              </div>
+              <div class="footer__col">
+                <div class="contacts">
+                  <div class="footer__email"><span class="contacts__label">E-mail</span><a
+                      class="contacts__link contacts__link_underlined"
+                      href="mailto:info@psyschool.com.ru">info@psyschool.com.ru</a></div>
+                </div>
+              </div>
+              <div class="footer__col">
+                <div class="contacts"><a class="contacts__link" href="#">Реквизиты </a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal micromodal-slide" id="video" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-entity="modal-video-pause"
+        data-micromodal-close="data-micromodal-close">
+        <div class="modal__container modal__container_type_video" role="dialog" aria-modal="true"
+          aria-labelledby="Видео">
+          <div class="modal__content modal__content_type_video">
+            <div class="video" data-entity="video-player">
+              <div class="video__pic-wrapper">
+                <div class="modal__preloader">
+                  <div class="modal__preloader-box">
+                    <div class="modal__preloader-ellipsis">
+                      <div class="modal__preloader-ellipse"></div>
+                      <div class="modal__preloader-ellipse"></div>
+                      <div class="modal__preloader-ellipse"></div>
+                      <div class="modal__preloader-ellipse"></div>
+                    </div>
+                  </div>
+                </div>
+              </div><video class="vlite-js video__source" data-entity="video" type="video/mp4"></video>
+            </div>
+          </div>
+          <div class="modal__footer"><button class="button_type_default modal__button" type="button"
+              data-entity="modal-video-pause" data-micromodal-close="data-micromodal-close"
+              aria-label="Close this dialog window">Закрыть</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal micromodal-slide" id="review-detail" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close="data-micromodal-close">
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="Детальное содержание отзыва">
+          <div class="modal__header">
+            <h3 class="modal__title" data-entity="title"></h3><button class="button_type_close modal__close"
+              type="button" aria-label="Close modal" data-micromodal-close="data-micromodal-close"> </button>
+          </div>
+          <div class="modal__content" data-entity="content"></div>
+          <div class="modal__footer"><button class="button_type_default modal__button" type="button"
+              data-micromodal-close="data-micromodal-close" aria-label="Close this dialog window">Закрыть</button></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
