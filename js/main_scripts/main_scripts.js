@@ -1,10 +1,36 @@
 /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 894:
+/***/ 127:
+/***/ (function() {
+
+var jsCoursesBody = document.querySelectorAll('.jsCoursesBody');
+
+var _loop = function _loop(index) {
+  var body = jsCoursesBody[index];
+  var content = body.querySelector('.jsCoursesContent');
+  var button = body.querySelector('.jsCoursesMore');
+  button.addEventListener('click', function () {
+    body.classList.toggle('is-active');
+
+    if (body.classList.contains('is-active')) {
+      body.style.maxHeight = content.offsetHeight;
+    } else {
+      body.style.maxHeight = '';
+    }
+  });
+};
+
+for (var index = 0; index < jsCoursesBody.length; index++) {
+  _loop(index);
+}
+
+/***/ }),
+
+/***/ 783:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
+"use strict";
 
 // EXTERNAL MODULE: ./node_modules/lozad/dist/lozad.min.js
 var lozad_min = __webpack_require__(59);
@@ -306,180 +332,6 @@ var initCardQuestionComponents = function initCardQuestionComponents() {
 };
 
 /* harmony default export */ var card_question_scripts = (initCardQuestionComponents);
-;// CONCATENATED MODULE: ./src/components/video-player/VideoPlayer.js
-
-
-
-
-
-var VideoPlayer = /*#__PURE__*/function () {
-  function VideoPlayer(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, VideoPlayer);
-
-    this.rootElement = rootElement;
-    this.findElements();
-    this.initUiState();
-    this.initVideoPlayer();
-    this.attachEvents();
-  }
-
-  (0,createClass/* default */.Z)(VideoPlayer, [{
-    key: "findElements",
-    value: function findElements() {
-      this.videoElement = this.rootElement.querySelector('[data-entity="video"]');
-    }
-  }, {
-    key: "initUiState",
-    value: function initUiState() {
-      this.uiState = {
-        videoVisibility: 'hidden'
-      };
-    }
-  }, {
-    key: "initVideoPlayer",
-    value: function initVideoPlayer() {
-      this.videoPlayerInstance = new (vlite_default())(this.videoElement, {
-        bigPlay: false,
-        autoHideDelay: 0
-      });
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      (0,delegate_it/* default */.Z)(this.rootElement, '[data-entity="play-button"]', 'click', this.playButtonClickHandler.bind(this));
-      this.videoPlayerInstance.player.on('pause', this.videoPauseHandler.bind(this));
-    }
-  }, {
-    key: "playButtonClickHandler",
-    value: function playButtonClickHandler() {
-      this.uiState.videoVisibility = 'shown';
-      this.renderRootState();
-      this.videoPlayerInstance.player.play();
-    }
-  }, {
-    key: "videoPauseHandler",
-    value: function videoPauseHandler() {
-      this.uiState.videoVisibility = 'hidden';
-      this.renderRootState();
-    }
-  }, {
-    key: "renderRootState",
-    value: function renderRootState() {
-      if (this.uiState.videoVisibility === 'shown') {
-        this.rootElement.classList.add('video_playing');
-        this.rootElement.classList.remove('video_paused');
-      }
-
-      if (this.uiState.videoVisibility === 'hidden') {
-        this.rootElement.classList.remove('video_playing');
-        this.rootElement.classList.add('video_paused');
-      }
-    }
-  }]);
-
-  return VideoPlayer;
-}();
-
-/* harmony default export */ var video_player_VideoPlayer = (VideoPlayer);
-;// CONCATENATED MODULE: ./src/components/card-review/CardReviewTypeText.js
-
-
-
-
-var CardReviewTypeText = /*#__PURE__*/function () {
-  function CardReviewTypeText(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, CardReviewTypeText);
-
-    this.rootElement = rootElement;
-    this.findElements();
-
-    if (this.isContentOverflow()) {
-      this.renderExpander();
-      this.initUiState();
-      this.attachEvents();
-    }
-  }
-
-  (0,createClass/* default */.Z)(CardReviewTypeText, [{
-    key: "isContentOverflow",
-    value: function isContentOverflow() {
-      var maxHeight = this.content.offsetHeight;
-      var actualHeight = this.contentText.offsetHeight;
-      if (actualHeight > maxHeight) return true;
-      return false;
-    }
-  }, {
-    key: "findElements",
-    value: function findElements() {
-      this.content = this.rootElement.querySelector('[data-entity="content"]');
-      this.contentText = this.rootElement.querySelector('[data-entity="content-text"]');
-      this.author = this.rootElement.querySelector('[data-entity="author"]');
-      this.expander = this.rootElement.querySelector('[data-entity="expander"]');
-      this.modal = document.querySelector('#review-detail');
-      this.modalContent = this.modal.querySelector('[data-entity="content"]');
-      this.modalTitle = this.modal.querySelector('[data-entity="title"]');
-    }
-  }, {
-    key: "renderExpander",
-    value: function renderExpander() {
-      this.expander.classList.add('card-review__button-more_shown');
-    }
-  }, {
-    key: "initUiState",
-    value: function initUiState() {
-      this.authorValue = this.author.textContent;
-      this.uiState = {
-        contentVisibility: 'hidden'
-      };
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      (0,delegate_it/* default */.Z)(this.rootElement, '[data-entity="expander"]', 'click', this.expanderClickHandler.bind(this));
-    }
-  }, {
-    key: "expanderClickHandler",
-    value: function expanderClickHandler() {
-      this.uiState = 'shown';
-      this.renderContentModal();
-    }
-  }, {
-    key: "renderContentModal",
-    value: function renderContentModal() {
-      this.modalTitle.textContent = this.authorValue;
-      this.modalContent.innerHTML = this.content.textContent;
-      window.MicroModal.show('review-detail');
-    }
-  }]);
-
-  return CardReviewTypeText;
-}();
-
-/* harmony default export */ var card_review_CardReviewTypeText = (CardReviewTypeText);
-;// CONCATENATED MODULE: ./src/components/card-review/scripts.js
-
-
-
-var initCardReviewTypeVideoComponents = function initCardReviewTypeVideoComponents() {
-  var elements = Array.from(document.querySelectorAll('[data-entity="card-review-video"]'));
-  elements.forEach(function (element) {
-    new video_player_VideoPlayer(element);
-  });
-};
-
-var initCardReviewTypeTextComponents = function initCardReviewTypeTextComponents() {
-  var elements = Array.from(document.querySelectorAll('[data-entity="card-review-text"]'));
-  elements.forEach(function (element) {
-    new card_review_CardReviewTypeText(element);
-  });
-};
-
-var initCardReviewComponents = function initCardReviewComponents() {
-  initCardReviewTypeVideoComponents();
-  initCardReviewTypeTextComponents();
-};
-
-/* harmony default export */ var card_review_scripts = (initCardReviewComponents);
 // EXTERNAL MODULE: ./node_modules/swiper/swiper.esm.js + 88 modules
 var swiper_esm = __webpack_require__(99);
 ;// CONCATENATED MODULE: ./src/components/section-reviews/Slider.js
@@ -736,6 +588,44 @@ var initSectionSpecialists = function initSectionSpecialists() {
 // 	}
 // });
 
+var jsSliderReviews = new swiper_esm/* default */.ZP('.jsSliderReviews .slider__inner', {
+  modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl],
+  pagination: {
+    el: ".jsSliderReviews .swiper-pagination",
+    clickable: true,
+    bulletClass: "slider__pagination-item"
+  },
+  navigation: {
+    nextEl: '.jsSliderReviews .swiper-button-next',
+    prevEl: '.jsSliderReviews .swiper-button-prev'
+  },
+  loop: false,
+  slidesPerView: 4,
+  spaceBetween: 16,
+  speed: 600,
+  breakpoints: {
+    0: {
+      spaceBetween: 16,
+      slidesPerView: 1
+    },
+    576: {
+      spaceBetween: 16,
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 16
+    },
+    1100: {
+      slidesPerView: 4,
+      spaceBetween: 16
+    }
+  }
+});
 var jsSliderOffers = new swiper_esm/* default */.ZP('.jsSliderOffers .slider__inner', {
   modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl, swiper_esm/* Autoplay */.pt],
   pagination: {
@@ -788,15 +678,169 @@ var jsSliderIntro = new swiper_esm/* default */.ZP('.jsSliderIntro .slider__inne
   speed: 600,
   spaceBetween: 45
 });
+
+if (window.screen.width < 992) {
+  var jsSliderTeachers = new swiper_esm/* default */.ZP('.jsSliderTeachers .slider__inner', {
+    modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl, swiper_esm/* Autoplay */.pt],
+    pagination: {
+      el: ".jsSliderTeachers .swiper-pagination",
+      bulletClass: "slider__pagination-item",
+      clickable: true
+    },
+    loop: false,
+    slidesPerView: 2,
+    speed: 600,
+    spaceBetween: 32,
+    breakpoints: {
+      0: {
+        spaceBetween: 16,
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      }
+    }
+  });
+}
+;// CONCATENATED MODULE: ./src/components/video-player/VideoPlayer.js
+
+
+
+
+
+var VideoPlayer = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+  function VideoPlayer(rootElement) {
+    _classCallCheck(this, VideoPlayer);
+
+    this.rootElement = rootElement;
+    this.findElements();
+    this.initUiState();
+    this.initVideoPlayer();
+    this.attachEvents();
+  }
+
+  _createClass(VideoPlayer, [{
+    key: "findElements",
+    value: function findElements() {
+      this.videoElement = this.rootElement.querySelector('[data-entity="video"]');
+    }
+  }, {
+    key: "initUiState",
+    value: function initUiState() {
+      this.uiState = {
+        videoVisibility: 'hidden'
+      };
+    }
+  }, {
+    key: "initVideoPlayer",
+    value: function initVideoPlayer() {
+      this.videoPlayerInstance = new Vlitejs(this.videoElement, {
+        bigPlay: false,
+        autoHideDelay: 0
+      });
+    }
+  }, {
+    key: "attachEvents",
+    value: function attachEvents() {
+      delegate(this.rootElement, '[data-entity="play-button"]', 'click', this.playButtonClickHandler.bind(this));
+      this.videoPlayerInstance.player.on('pause', this.videoPauseHandler.bind(this));
+    }
+  }, {
+    key: "playButtonClickHandler",
+    value: function playButtonClickHandler() {
+      this.uiState.videoVisibility = 'shown';
+      this.renderRootState();
+      this.videoPlayerInstance.player.play();
+    }
+  }, {
+    key: "videoPauseHandler",
+    value: function videoPauseHandler() {
+      this.uiState.videoVisibility = 'hidden';
+      this.renderRootState();
+    }
+  }, {
+    key: "renderRootState",
+    value: function renderRootState() {
+      if (this.uiState.videoVisibility === 'shown') {
+        this.rootElement.classList.add('video_playing');
+        this.rootElement.classList.remove('video_paused');
+      }
+
+      if (this.uiState.videoVisibility === 'hidden') {
+        this.rootElement.classList.remove('video_playing');
+        this.rootElement.classList.add('video_paused');
+      }
+    }
+  }]);
+
+  return VideoPlayer;
+}()));
+
+/* harmony default export */ var video_player_VideoPlayer = ((/* unused pure expression or super */ null && (VideoPlayer)));
+;// CONCATENATED MODULE: ./src/components/card-review/scripts.js
+ // import CardReviewTypeText from './CardReviewTypeText.js';
+// const initCardReviewTypeVideoComponents = () => {
+//   const elements = Array.from(document.querySelectorAll('[data-entity="card-review-video"]'));
+//   elements.forEach((element) => {
+//     new VideoPlayer(element);
+//   });
+// };
+// // const initCardReviewTypeTextComponents = () => {
+// //   const elements = Array.from(document.querySelectorAll('[data-entity="card-review-text"]'));
+// //   elements.forEach((element) => {
+// //     new CardReviewTypeText(element);
+// //   });
+// // };
+// const initCardReviewComponents = () => {
+//   initCardReviewTypeVideoComponents();
+//   initCardReviewTypeTextComponents();
+// };
+// export default initCardReviewComponents;
+
+document.addEventListener('DOMContentLoaded', function () {
+  var jsReviewBody = document.querySelectorAll('.jsReviewBody');
+
+  var _loop = function _loop(index) {
+    var body = jsReviewBody[index];
+    var content = body.querySelector('.jsReviewContent');
+    var button = body.querySelector('.jsReviewMore');
+
+    if (body.offsetHeight < content.offsetHeight) {
+      button.classList.add('is-visible');
+    } else {
+      button.classList.remove('is-visible');
+    }
+
+    button.addEventListener('click', function () {
+      body.classList.toggle('is-active');
+
+      if (body.classList.contains('is-active')) {
+        body.style.maxHeight = content.offsetHeight;
+      } else {
+        body.style.maxHeight = '';
+      }
+    });
+  };
+
+  for (var index = 0; index < jsReviewBody.length; index++) {
+    _loop(index);
+  }
+});
+// EXTERNAL MODULE: ./src/components/about-courses/scripts.js
+var about_courses_scripts = __webpack_require__(127);
 ;// CONCATENATED MODULE: ./src/init.js
 
 
 
 
-
+ // import initCardReviewComponents from '@components/card-review/scripts.js';
 
 
  // import initSectionOffers from '@components/section-offers/scripts.js';
+
+
+
 
 
 
@@ -809,8 +853,8 @@ var init = function init() {
   scripts();
   header_scripts();
   card_question_scripts();
-  section_reviews_scripts();
-  card_review_scripts();
+  section_reviews_scripts(); // initCardReviewComponents();
+
   section_specialists_scripts(); // initSectionOffers();
 };
 
@@ -979,7 +1023,7 @@ src_init();
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(894); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(783); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
