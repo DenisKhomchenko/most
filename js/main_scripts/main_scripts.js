@@ -174,89 +174,29 @@ var initModalVideo = function initModalVideo() {
 
 
 
-
-var Header = /*#__PURE__*/function () {
-  function Header(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, Header);
-
-    this.rootElement = rootElement;
-    this.findElements();
-    this.initUiState();
-    this.attachEvents();
-  }
-
-  (0,createClass/* default */.Z)(Header, [{
-    key: "findElements",
-    value: function findElements() {
-      this.menu = this.rootElement.querySelector('[data-entity="menu"]');
-      this.iconMenu = this.rootElement.querySelector('[data-entity="burger-menu-icon"]');
-      this.iconClose = this.rootElement.querySelector('[data-entity="burger-close-icon"]');
-    }
-  }, {
-    key: "initUiState",
-    value: function initUiState() {
-      this.uiState = {
-        menuVisibility: 'hidden'
-      };
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      (0,delegate_it/* default */.Z)(this.rootElement, '[data-entity="burger"]', 'click', this.burgerClickHandler.bind(this));
-    }
-  }, {
-    key: "burgerClickHandler",
-    value: function burgerClickHandler() {
-      this.uiState.menuVisibility = this.uiState.menuVisibility === 'hidden' ? 'shown' : 'hidden';
-      this.renderRootState();
-      this.renderIconType();
-      this.renderMenuVisibility();
-    }
-  }, {
-    key: "renderRootState",
-    value: function renderRootState() {
-      if (this.uiState.menuVisibility === 'hidden') {
-        this.rootElement.classList.remove('header_expanded');
-      }
-
-      if (this.uiState.menuVisibility === 'shown') {
-        this.rootElement.classList.add('header_expanded');
-      }
-    }
-  }, {
-    key: "renderMenuVisibility",
-    value: function renderMenuVisibility() {
-      if (this.uiState.menuVisibility === 'hidden') {
-        this.menu.classList.remove('header__menu_shown');
-      }
-
-      if (this.uiState.menuVisibility === 'shown') {
-        this.menu.classList.add('header__menu_shown');
-      }
-    }
-  }, {
-    key: "renderIconType",
-    value: function renderIconType() {
-      if (this.uiState.menuVisibility === 'hidden') {
-        this.iconClose.classList.remove('header__burger-icon_shown');
-        this.iconClose.classList.add('header__burger-icon_hidden');
-        this.iconMenu.classList.add('header__burger-icon_shown');
-        this.iconMenu.classList.remove('header__burger-icon_hidden');
-      }
-
-      if (this.uiState.menuVisibility === 'shown') {
-        this.iconMenu.classList.add('header__burger-icon_hidden');
-        this.iconMenu.classList.remove('header__burger-icon_shown');
-        this.iconClose.classList.add('header__burger-icon_shown');
-        this.iconClose.classList.remove('header__burger-icon_hidden');
-      }
-    }
-  }]);
-
-  return Header;
-}();
+var Header = function Header() {
+  (0,classCallCheck/* default */.Z)(this, Header);
+};
 
 /* harmony default export */ var header_Header = (Header);
+var jsHeader = document.querySelector('.jsHeader');
+var jsHeaderMenu = document.querySelector('.jsHeaderMenu');
+var jsHeaderBurger = document.querySelector('.jsHeaderBurger');
+var jsHeaderBackdrop = document.querySelector('.jsHeaderBackdrop');
+jsHeaderBurger.addEventListener('click', function () {
+  jsHeader.classList.toggle('is-active');
+  jsHeaderMenu.classList.toggle('is-active');
+  jsHeaderBurger.classList.toggle('is-active');
+  jsHeaderBackdrop.classList.toggle('is-active');
+  document.querySelector('body').classList.toggle('_lock');
+});
+jsHeaderBackdrop.addEventListener('click', function () {
+  jsHeader.classList.remove('is-active');
+  jsHeaderMenu.classList.remove('is-active');
+  jsHeaderBurger.classList.remove('is-active');
+  jsHeaderBackdrop.classList.remove('is-active');
+  document.querySelector('body').classList.remove('_lock');
+});
 ;// CONCATENATED MODULE: ./src/components/header/scripts.js
 
 
