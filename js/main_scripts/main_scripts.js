@@ -27,7 +27,257 @@ for (var index = 0; index < jsCoursesBody.length; index++) {
 
 /***/ }),
 
-/***/ 783:
+/***/ 312:
+/***/ (function() {
+
+window.backdropOpen = function () {
+  var body = document.querySelector('body');
+  setTimeout(function () {
+    if (!body.classList.contains('_backdrop')) {
+      body.classList.add('_backdrop');
+    }
+  }, 0);
+};
+
+window.backdropClose = function () {
+  var body = document.querySelector('body');
+
+  if (body.classList.contains('_backdrop')) {
+    body.classList.remove('_backdrop');
+  }
+};
+
+/***/ }),
+
+/***/ 184:
+/***/ (function() {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var jsAccordions = document.querySelectorAll('.jsAccordion');
+
+  var _loop = function _loop(index) {
+    var item = jsAccordions[index];
+    var trigger = item.querySelector('.jsAccordionTrigger');
+    var body = item.querySelector('.jsAccordionBody');
+    var content = item.querySelector('.jsAccordionContent');
+    check();
+    trigger.addEventListener('click', function () {
+      item.classList.toggle('is-active');
+      check();
+    });
+
+    function check() {
+      if (item.classList.contains('is-active')) {
+        body.style.height = content.offsetHeight + 'px';
+      } else {
+        body.style.height = '';
+      }
+    }
+  };
+
+  for (var index = 0; index < jsAccordions.length; index++) {
+    _loop(index);
+  }
+});
+
+/***/ }),
+
+/***/ 798:
+/***/ (function() {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var jsReviewBody = document.querySelectorAll('.jsReviewBody');
+
+  var _loop = function _loop(index) {
+    var body = jsReviewBody[index];
+    var content = body.querySelector('.jsReviewContent');
+    var button = body.querySelector('.jsReviewMore');
+
+    if (body.offsetHeight < content.offsetHeight) {
+      button.classList.add('is-visible');
+    } else {
+      button.classList.remove('is-visible');
+    }
+
+    button.addEventListener('click', function () {
+      body.classList.toggle('is-active');
+
+      if (body.classList.contains('is-active')) {
+        body.style.maxHeight = content.offsetHeight + 'px';
+      } else {
+        body.style.maxHeight = '';
+      }
+    });
+  };
+
+  for (var index = 0; index < jsReviewBody.length; index++) {
+    _loop(index);
+  }
+});
+
+/***/ }),
+
+/***/ 642:
+/***/ (function() {
+
+document.addEventListener('DOMContentLoaded', function () {
+  var jsFilterGroup = document.querySelectorAll('.jsFilterGroup');
+
+  var _loop = function _loop(index) {
+    var item = jsFilterGroup[index];
+    var trigger = item.querySelector('.jsFilterGroupTrigger');
+    var body = item.querySelector('.jsFilterGroupBody');
+    var content = item.querySelector('.jsFilterGroupContent');
+    trigger.addEventListener('click', function () {
+      item.classList.toggle('is-active');
+      checkClass();
+    });
+
+    if (window.innerWidth > 991) {
+      checkClass();
+    } else {
+      if (item.classList.contains('is-active')) {
+        item.classList.remove('is-active');
+      }
+    }
+
+    function checkClass() {
+      if (item.classList.contains('is-active')) {
+        body.style.maxHeight = content.offsetHeight + 'px';
+      } else {
+        body.style.maxHeight = '';
+      }
+    }
+  };
+
+  for (var index = 0; index < jsFilterGroup.length; index++) {
+    _loop(index);
+  }
+
+  if (document.querySelector('.jsFilter')) {
+    (function () {
+      var checkInputs = function checkInputs() {
+        var ch = jsFilter.querySelectorAll('.jsCheckbox:checked').length;
+        var rad = jsFilter.querySelectorAll('.jsRadio:checked').length;
+        checkeds += ch + rad;
+      };
+
+      var filterClose = function filterClose() {
+        jsFilter.classList.remove('is-active');
+        jsFilterContent.classList.remove('is-active');
+      };
+
+      var jsFilter = document.querySelector('.jsFilter');
+      var jsFilterTrigger = jsFilter.querySelector('.jsFilterTrigger');
+      var jsFilterContent = jsFilter.querySelector('.jsFilterContent');
+      var jsFilterClose = jsFilter.querySelector('.jsFilterClose');
+      var jsFilterClear = jsFilter.querySelectorAll('.jsFilterClear');
+      var jsFilterCount = jsFilter.querySelectorAll('.jsFilterCount');
+      var jsCheckbox = jsFilter.querySelectorAll('.jsCheckbox');
+      var jsRadio = jsFilter.querySelectorAll('.jsRadio');
+      var checkeds = 0;
+      checkInputs(); // console.log(checkeds);
+
+      var _loop2 = function _loop2(_index) {
+        var item = jsCheckbox[_index];
+        item.addEventListener('change', function () {
+          if (item.checked) {
+            checkeds++;
+          } else {
+            checkeds--;
+          } // console.log(checkeds);
+
+        });
+      };
+
+      for (var _index = 0; _index < jsCheckbox.length; _index++) {
+        _loop2(_index);
+      }
+
+      var _loop3 = function _loop3(_index2) {
+        var item = jsRadio[_index2];
+        item.addEventListener('change', function () {
+          if (item.checked) {
+            checkeds++;
+          } else {
+            checkeds--;
+          } // console.log(checkeds);
+
+        });
+      };
+
+      for (var _index2 = 0; _index2 < jsRadio.length; _index2++) {
+        _loop3(_index2);
+      }
+
+      document.addEventListener('click', function (e) {
+        var target = e.target; // console.log('click');
+
+        if (jsFilter.classList.contains('is-active')) {
+          // console.log('submit');
+          if (!target.closest('.jsFilter')) {
+            filterClose();
+            window.backdropClose(); // console.log('close');
+          } else {// console.log('not close');
+          }
+        }
+      });
+      jsFilterTrigger.addEventListener('click', function () {
+        jsFilter.classList.add('is-active');
+        jsFilterContent.classList.add('is-active');
+        window.backdropOpen();
+      });
+      jsFilterClose.addEventListener('click', function () {
+        filterClose();
+        window.backdropClose();
+      });
+    })();
+  }
+});
+
+/***/ }),
+
+/***/ 450:
+/***/ (function() {
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('.jsHeader')) {
+    var headerClose = function headerClose() {
+      jsHeader.classList.remove('is-active');
+      jsHeaderMenu.classList.remove('is-active');
+      jsHeaderBurger.classList.remove('is-active');
+    };
+
+    var jsHeader = document.querySelector('.jsHeader');
+    var jsHeaderMenu = document.querySelector('.jsHeaderMenu');
+    var jsHeaderBurger = document.querySelector('.jsHeaderBurger');
+    jsHeaderBurger.addEventListener('click', function () {
+      if (jsHeader.classList.contains('is-active')) {
+        headerClose();
+        window.backdropClose();
+      } else {
+        jsHeader.classList.add('is-active');
+        jsHeaderMenu.classList.add('is-active');
+        jsHeaderBurger.classList.add('is-active');
+        window.backdropOpen();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      var target = e.target;
+
+      if (jsHeader.classList.contains('is-active')) {
+        if (!target.closest('.jsHeader')) {
+          headerClose();
+          window.backdropClose();
+        }
+      }
+    });
+  }
+});
+
+/***/ }),
+
+/***/ 914:
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -170,325 +420,12 @@ var initModalVideo = function initModalVideo() {
 };
 
 /* harmony default export */ var scripts = (initModalVideo);
-;// CONCATENATED MODULE: ./src/components/header/Header.js
-
-
-
-var Header = function Header() {
-  (0,classCallCheck/* default */.Z)(this, Header);
-};
-
-/* harmony default export */ var header_Header = (Header);
-var jsHeader = document.querySelector('.jsHeader');
-var jsHeaderMenu = document.querySelector('.jsHeaderMenu');
-var jsHeaderBurger = document.querySelector('.jsHeaderBurger');
-var jsHeaderBackdrop = document.querySelector('.jsHeaderBackdrop');
-jsHeaderBurger.addEventListener('click', function () {
-  jsHeader.classList.toggle('is-active');
-  jsHeaderMenu.classList.toggle('is-active');
-  jsHeaderBurger.classList.toggle('is-active');
-  jsHeaderBackdrop.classList.toggle('is-active');
-  document.querySelector('body').classList.toggle('_lock');
-});
-jsHeaderBackdrop.addEventListener('click', function () {
-  jsHeader.classList.remove('is-active');
-  jsHeaderMenu.classList.remove('is-active');
-  jsHeaderBurger.classList.remove('is-active');
-  jsHeaderBackdrop.classList.remove('is-active');
-  document.querySelector('body').classList.remove('_lock');
-});
-;// CONCATENATED MODULE: ./src/components/header/scripts.js
-
-
-var initHeaderComponent = function initHeaderComponent() {
-  var elements = Array.from(document.querySelectorAll('[data-entity="header"]'));
-  elements.forEach(function (element) {
-    new header_Header(element);
-  });
-};
-
-/* harmony default export */ var header_scripts = (initHeaderComponent);
-;// CONCATENATED MODULE: ./src/components/card-question/CardQuestion.js
-
-
-
-
-var CardQuestion = /*#__PURE__*/function () {
-  function CardQuestion(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, CardQuestion);
-
-    this.rootElement = rootElement;
-    this.initUiState();
-    this.attachEvents();
-  }
-
-  (0,createClass/* default */.Z)(CardQuestion, [{
-    key: "initUiState",
-    value: function initUiState() {
-      var hasElementShownClass = this.rootElement.classList.contains('card-question_expanded');
-      var initialAnswerVisibilityState = hasElementShownClass ? 'shown' : 'hidden';
-      this.uiState = {
-        answerVisibility: initialAnswerVisibilityState
-      };
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      (0,delegate_it/* default */.Z)(this.rootElement, '[data-entity="card-question-toggler"]', 'click', this.togglerClickHandler.bind(this));
-    }
-  }, {
-    key: "togglerClickHandler",
-    value: function togglerClickHandler() {
-      this.uiState.answerVisibility = this.uiState.answerVisibility === 'hidden' ? 'shown' : 'hidden';
-      this.renderRootState();
-    }
-  }, {
-    key: "renderRootState",
-    value: function renderRootState() {
-      if (this.uiState.answerVisibility === 'hidden') {
-        this.rootElement.classList.remove('card-question_expanded');
-        this.rootElement.classList.add('card-question_collapsed');
-      }
-
-      if (this.uiState.answerVisibility === 'shown') {
-        this.rootElement.classList.remove('card-question_collapsed');
-        this.rootElement.classList.add('card-question_expanded');
-      }
-    }
-  }]);
-
-  return CardQuestion;
-}();
-
-/* harmony default export */ var card_question_CardQuestion = (CardQuestion);
-;// CONCATENATED MODULE: ./src/components/card-question/scripts.js
-
-
-var initCardQuestionComponents = function initCardQuestionComponents() {
-  var elements = Array.from(document.querySelectorAll('[data-entity="card-question"]'));
-  elements.forEach(function (element) {
-    new card_question_CardQuestion(element);
-  });
-};
-
-/* harmony default export */ var card_question_scripts = (initCardQuestionComponents);
+// EXTERNAL MODULE: ./src/components/header/scripts.js
+var header_scripts = __webpack_require__(450);
+// EXTERNAL MODULE: ./src/components/backdrop/scripts.js
+var backdrop_scripts = __webpack_require__(312);
 // EXTERNAL MODULE: ./node_modules/swiper/swiper.esm.js + 88 modules
 var swiper_esm = __webpack_require__(99);
-;// CONCATENATED MODULE: ./src/components/section-reviews/Slider.js
-
-
-
-
-var Slider = /*#__PURE__*/function () {
-  function Slider(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, Slider);
-
-    this.rootElement = rootElement;
-    this.findElements();
-    this.init();
-  }
-
-  (0,createClass/* default */.Z)(Slider, [{
-    key: "findElements",
-    value: function findElements() {
-      this.sliderStage = this.rootElement.querySelector('[data-entity="slider-stage"]');
-      this.sliderNavPrev = this.rootElement.querySelector('[data-entity="slider-nav-prev"]');
-      this.sliderNavNext = this.rootElement.querySelector('[data-entity="slider-nav-next"]');
-      this.sliderPagination = this.rootElement.querySelector('[data-entity="slider-pagination"]');
-    }
-  }, {
-    key: "init",
-    value: function init() {
-      this.slider = new swiper_esm/* default */.ZP(this.sliderStage, {
-        modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl],
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-            pagination: {
-              el: this.sliderPagination,
-              dynamicBullets: true,
-              dynamicMainBullets: 3
-            }
-          },
-          720: {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            pagination: {
-              el: this.sliderPagination,
-              dynamicBullets: true,
-              dynamicMainBullets: 3
-            }
-          },
-          1024: {
-            slidesPerView: 4,
-            spaceBetween: 8,
-            navigation: {
-              prevEl: this.sliderNavPrev,
-              nextEl: this.sliderNavNext
-            }
-          },
-          1260: {
-            slidesPerView: 4,
-            spaceBetween: 16,
-            navigation: {
-              prevEl: this.sliderNavPrev,
-              nextEl: this.sliderNavNext
-            }
-          }
-        }
-      });
-    }
-  }]);
-
-  return Slider;
-}();
-
-/* harmony default export */ var section_reviews_Slider = (Slider);
-;// CONCATENATED MODULE: ./src/components/section-reviews/scripts.js
-
-
-var initSectionReviews = function initSectionReviews() {
-  var elements = document.querySelectorAll('[data-entity="reviews-slider"]');
-  elements.forEach(function (element) {
-    new section_reviews_Slider(element);
-  });
-};
-
-/* harmony default export */ var section_reviews_scripts = (initSectionReviews);
-;// CONCATENATED MODULE: ./src/components/section-specialists/Slider.js
-
-
-
-
-
-var Slider_Slider = /*#__PURE__*/function () {
-  function Slider(rootElement) {
-    (0,classCallCheck/* default */.Z)(this, Slider);
-
-    this.rootElement = rootElement;
-    this.findElements();
-    this.initUiState();
-    this.initSlider();
-    this.attachEvents();
-  }
-
-  (0,createClass/* default */.Z)(Slider, [{
-    key: "findElements",
-    value: function findElements() {
-      this.sliderStage = this.rootElement.querySelector('[data-entity="slider-stage"]');
-      this.sliderNavPrev = this.rootElement.querySelector('[data-entity="slider-nav-prev"]');
-      this.sliderNavNext = this.rootElement.querySelector('[data-entity="slider-nav-next"]');
-      this.sliderPagination = this.rootElement.querySelector('[data-entity="slider-pagination"]');
-      this.sliderTabs = Array.from(this.rootElement.querySelectorAll('[data-entity="slider-tab"]'));
-    }
-  }, {
-    key: "initUiState",
-    value: function initUiState() {
-      this.uiState = {
-        currentActiveSlideIndex: 0
-      };
-    }
-  }, {
-    key: "initSlider",
-    value: function initSlider() {
-      this.slider = new swiper_esm/* default */.ZP(this.sliderStage, {
-        modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl],
-        slidesPerView: 1,
-        breakpoints: {
-          0: {
-            spaceBetween: 16,
-            pagination: {
-              el: this.sliderPagination,
-              dynamicBullets: true,
-              dynamicMainBullets: 3
-            }
-          },
-          720: {
-            spaceBetween: 24,
-            pagination: {
-              el: this.sliderPagination,
-              dynamicBullets: true,
-              dynamicMainBullets: 3
-            }
-          },
-          1024: {
-            spaceBetween: 16,
-            navigation: {
-              prevEl: this.sliderNavPrev,
-              nextEl: this.sliderNavNext
-            }
-          },
-          1260: {
-            spaceBetween: 24,
-            navigation: {
-              prevEl: this.sliderNavPrev,
-              nextEl: this.sliderNavNext
-            }
-          }
-        }
-      });
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      (0,delegate_it/* default */.Z)(this.rootElement, '[data-entity="slider-tab"]', 'click', this.tabClickHandler.bind(this));
-      this.slider.on('slideChange', this.sliderChangeHandler.bind(this));
-    }
-  }, {
-    key: "tabClickHandler",
-    value: function tabClickHandler(event) {
-      var targetSlideIndex = event.delegateTarget.dataset.slideIndex || 0;
-      this.updateUiState(targetSlideIndex);
-      this.renderActiveSlide();
-      this.renderActiveTab();
-    }
-  }, {
-    key: "sliderChangeHandler",
-    value: function sliderChangeHandler() {
-      this.updateUiState(this.slider.activeIndex);
-      this.renderActiveTab();
-    }
-  }, {
-    key: "updateUiState",
-    value: function updateUiState(targetIndex) {
-      this.uiState.currentActiveSlideIndex = +targetIndex;
-    }
-  }, {
-    key: "renderActiveSlide",
-    value: function renderActiveSlide() {
-      var currentActiveSlideIndex = this.uiState.currentActiveSlideIndex;
-      this.slider.slideTo(currentActiveSlideIndex);
-    }
-  }, {
-    key: "renderActiveTab",
-    value: function renderActiveTab() {
-      var currentActiveSlideIndex = this.uiState.currentActiveSlideIndex;
-      this.sliderTabs.forEach(function (sliderTab, index) {
-        sliderTab.classList.remove('section-specialist__tab_active');
-
-        if (index === currentActiveSlideIndex) {
-          sliderTab.classList.add('section-specialist__tab_active');
-        }
-      });
-    }
-  }]);
-
-  return Slider;
-}();
-
-/* harmony default export */ var section_specialists_Slider = (Slider_Slider);
-;// CONCATENATED MODULE: ./src/components/section-specialists/scripts.js
-
-
-var initSectionSpecialists = function initSectionSpecialists() {
-  var elements = document.querySelectorAll('[data-entity="specialists-slider"]');
-  elements.forEach(function (element) {
-    new section_specialists_Slider(element);
-  });
-};
-
-/* harmony default export */ var section_specialists_scripts = (initSectionSpecialists);
 ;// CONCATENATED MODULE: ./src/components/slider/scripts.js
  // const jsSlider = new Swiper('.jsSlider .slider__inner', {
 // 	modules: [Navigation, Pagination, Autoplay],
@@ -643,141 +580,153 @@ if (window.screen.width < 992) {
     }
   });
 }
-;// CONCATENATED MODULE: ./src/components/video-player/VideoPlayer.js
 
-
-
-
-
-var VideoPlayer = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
-  function VideoPlayer(rootElement) {
-    _classCallCheck(this, VideoPlayer);
-
-    this.rootElement = rootElement;
-    this.findElements();
-    this.initUiState();
-    this.initVideoPlayer();
-    this.attachEvents();
-  }
-
-  _createClass(VideoPlayer, [{
-    key: "findElements",
-    value: function findElements() {
-      this.videoElement = this.rootElement.querySelector('[data-entity="video"]');
-    }
-  }, {
-    key: "initUiState",
-    value: function initUiState() {
-      this.uiState = {
-        videoVisibility: 'hidden'
-      };
-    }
-  }, {
-    key: "initVideoPlayer",
-    value: function initVideoPlayer() {
-      this.videoPlayerInstance = new Vlitejs(this.videoElement, {
-        bigPlay: false,
-        autoHideDelay: 0
-      });
-    }
-  }, {
-    key: "attachEvents",
-    value: function attachEvents() {
-      delegate(this.rootElement, '[data-entity="play-button"]', 'click', this.playButtonClickHandler.bind(this));
-      this.videoPlayerInstance.player.on('pause', this.videoPauseHandler.bind(this));
-    }
-  }, {
-    key: "playButtonClickHandler",
-    value: function playButtonClickHandler() {
-      this.uiState.videoVisibility = 'shown';
-      this.renderRootState();
-      this.videoPlayerInstance.player.play();
-    }
-  }, {
-    key: "videoPauseHandler",
-    value: function videoPauseHandler() {
-      this.uiState.videoVisibility = 'hidden';
-      this.renderRootState();
-    }
-  }, {
-    key: "renderRootState",
-    value: function renderRootState() {
-      if (this.uiState.videoVisibility === 'shown') {
-        this.rootElement.classList.add('video_playing');
-        this.rootElement.classList.remove('video_paused');
-      }
-
-      if (this.uiState.videoVisibility === 'hidden') {
-        this.rootElement.classList.remove('video_playing');
-        this.rootElement.classList.add('video_paused');
-      }
-    }
-  }]);
-
-  return VideoPlayer;
-}()));
-
-/* harmony default export */ var video_player_VideoPlayer = ((/* unused pure expression or super */ null && (VideoPlayer)));
-;// CONCATENATED MODULE: ./src/components/card-review/scripts.js
- // import CardReviewTypeText from './CardReviewTypeText.js';
-// const initCardReviewTypeVideoComponents = () => {
-//   const elements = Array.from(document.querySelectorAll('[data-entity="card-review-video"]'));
-//   elements.forEach((element) => {
-//     new VideoPlayer(element);
-//   });
-// };
-// // const initCardReviewTypeTextComponents = () => {
-// //   const elements = Array.from(document.querySelectorAll('[data-entity="card-review-text"]'));
-// //   elements.forEach((element) => {
-// //     new CardReviewTypeText(element);
-// //   });
-// // };
-// const initCardReviewComponents = () => {
-//   initCardReviewTypeVideoComponents();
-//   initCardReviewTypeTextComponents();
-// };
-// export default initCardReviewComponents;
-
+var jsSliderSpecialist = new swiper_esm/* default */.ZP('.jsSliderSpecialist .slider__inner', {
+  modules: [swiper_esm/* Navigation */.W_, swiper_esm/* Pagination */.tl, swiper_esm/* Autoplay */.pt],
+  pagination: {
+    el: ".jsSliderSpecialist .swiper-pagination",
+    clickable: true,
+    bulletClass: "slider__pagination-item"
+  },
+  navigation: {
+    nextEl: '.jsSliderSpecialist .swiper-button-next',
+    prevEl: '.jsSliderSpecialist .swiper-button-prev'
+  },
+  loop: false,
+  slidesPerView: 1,
+  speed: 750,
+  spaceBetween: 60
+});
 document.addEventListener('DOMContentLoaded', function () {
-  var jsReviewBody = document.querySelectorAll('.jsReviewBody');
+  var jsSliderSpecialistLink = document.querySelectorAll('.jsSliderSpecialistLink');
 
   var _loop = function _loop(index) {
-    var body = jsReviewBody[index];
-    var content = body.querySelector('.jsReviewContent');
-    var button = body.querySelector('.jsReviewMore');
-
-    if (body.offsetHeight < content.offsetHeight) {
-      button.classList.add('is-visible');
-    } else {
-      button.classList.remove('is-visible');
-    }
-
-    button.addEventListener('click', function () {
-      body.classList.toggle('is-active');
-
-      if (body.classList.contains('is-active')) {
-        body.style.maxHeight = content.offsetHeight;
-      } else {
-        body.style.maxHeight = '';
-      }
+    var item = jsSliderSpecialistLink[index];
+    var slideIndex = item.getAttribute('data-slide-index');
+    item.addEventListener('click', function () {
+      jsSliderSpecialist.slideTo(slideIndex);
+    });
+    jsSliderSpecialist.on('slideChange', function () {
+      item.classList.remove('is-active');
     });
   };
 
-  for (var index = 0; index < jsReviewBody.length; index++) {
+  for (var index = 0; index < jsSliderSpecialistLink.length; index++) {
     _loop(index);
   }
+
+  jsSliderSpecialist.on('slideChange', function () {
+    jsSliderSpecialistLink[jsSliderSpecialist.activeIndex].classList.add('is-active');
+  });
 });
+// EXTERNAL MODULE: ./src/components/filter/scripts.js
+var filter_scripts = __webpack_require__(642);
+// EXTERNAL MODULE: ./src/components/card-review/scripts.js
+var card_review_scripts = __webpack_require__(798);
+// EXTERNAL MODULE: ./src/components/card-question/scripts.js
+var card_question_scripts = __webpack_require__(184);
+;// CONCATENATED MODULE: ./src/components/section-reviews/Slider.js
+
+
+
+
+var Slider_Slider = /*#__PURE__*/(/* unused pure expression or super */ null && (function () {
+  function Slider(rootElement) {
+    _classCallCheck(this, Slider);
+
+    this.rootElement = rootElement;
+    this.findElements();
+    this.init();
+  }
+
+  _createClass(Slider, [{
+    key: "findElements",
+    value: function findElements() {
+      this.sliderStage = this.rootElement.querySelector('[data-entity="slider-stage"]');
+      this.sliderNavPrev = this.rootElement.querySelector('[data-entity="slider-nav-prev"]');
+      this.sliderNavNext = this.rootElement.querySelector('[data-entity="slider-nav-next"]');
+      this.sliderPagination = this.rootElement.querySelector('[data-entity="slider-pagination"]');
+    }
+  }, {
+    key: "init",
+    value: function init() {
+      this.slider = new Swiper(this.sliderStage, {
+        modules: [Navigation, Pagination],
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            pagination: {
+              el: this.sliderPagination,
+              dynamicBullets: true,
+              dynamicMainBullets: 3
+            }
+          },
+          720: {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+              el: this.sliderPagination,
+              dynamicBullets: true,
+              dynamicMainBullets: 3
+            }
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 8,
+            navigation: {
+              prevEl: this.sliderNavPrev,
+              nextEl: this.sliderNavNext
+            }
+          },
+          1260: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            navigation: {
+              prevEl: this.sliderNavPrev,
+              nextEl: this.sliderNavNext
+            }
+          }
+        }
+      });
+    }
+  }]);
+
+  return Slider;
+}()));
+
+/* harmony default export */ var section_reviews_Slider = ((/* unused pure expression or super */ null && (Slider_Slider)));
+;// CONCATENATED MODULE: ./src/components/section-reviews/scripts.js
+
+
+var initSectionReviews = function initSectionReviews() {
+  var elements = document.querySelectorAll('[data-entity="reviews-slider"]');
+  elements.forEach(function (element) {
+    new Slider(element);
+  });
+};
+
+/* harmony default export */ var section_reviews_scripts = ((/* unused pure expression or super */ null && (initSectionReviews)));
 // EXTERNAL MODULE: ./src/components/about-courses/scripts.js
 var about_courses_scripts = __webpack_require__(127);
 ;// CONCATENATED MODULE: ./src/init.js
 
 
+ // import initHeaderComponent from '@components/header/scripts.js';
+// import initCardQuestionComponents from '@components/card-question/scripts.js';
+// import initCardReviewComponents from '@components/card-review/scripts.js';
+// import initSectionReviews from '@components/section-reviews/scripts.js';
+// import initSectionSpecialists from '@components/section-specialists/scripts.js';
+// import initSectionOffers from '@components/section-offers/scripts.js';
+//Blocks
 
 
- // import initCardReviewComponents from '@components/card-review/scripts.js';
 
 
- // import initSectionOffers from '@components/section-offers/scripts.js';
+ //Cards
+
+
+ //Sections
 
 
 
@@ -790,12 +739,12 @@ var init = function init() {
   micromodal_es/* default.init */.Z.init({
     disableScroll: true
   });
-  scripts();
-  header_scripts();
-  card_question_scripts();
-  section_reviews_scripts(); // initCardReviewComponents();
-
-  section_specialists_scripts(); // initSectionOffers();
+  scripts(); // initHeaderComponent();
+  // initCardQuestionComponents();
+  // initSectionReviews();
+  // initCardReviewComponents();
+  // initSectionSpecialists();
+  // initSectionOffers();
 };
 
 /* harmony default export */ var src_init = (init);
@@ -963,7 +912,7 @@ src_init();
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(783); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [216], function() { return __webpack_require__(914); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
