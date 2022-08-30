@@ -12,19 +12,155 @@
     <link href="css/main_styles/main_styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="tech">
-      <div class="tech__container">
-        <h1 class="tech__title">Карта сайта</h1>
-        <div class="sitemap tech__sitemap"><a class="sitemap__link" href="ui.html">UI-kit</a><a class="sitemap__link"
-            href="main.html">Главная</a><a class="sitemap__link" href="about.html">Об институте</a><a
-            class="sitemap__link" href="catalog.html">Каталог курсов</a><a class="sitemap__link"
-            href="course.html">Страница курса</a><a class="sitemap__link" href="articles.html">Статьи</a><a
-            class="sitemap__link" href="article.html">Статья</a><a class="sitemap__link"
-            href="teachers.html">Преподаватели</a><a class="sitemap__link" href="teacher.html">Карточка
-            преподавателя</a><a class="sitemap__link" href="contacts.html">Контакты</a><a class="sitemap__link"
-            href="404.html">404</a></div>
+    <header class="header jsHeader">
+      <div class="container header__container">
+        <div class="header__inner"> <a class="logo header__logo" href="main.html"><img class="logo__pic"
+              src="assets/media/logo-compact.svg" alt="Most" /><img class="logo__label"
+              src="assets/media/logo-compact-label.svg" alt="Институт психологии и психотерапии" /></a><a
+            class="button button--border header__button" href="catalog.html"><span
+              class="header__link-title">Курсы</span></a>
+          <div class="header__burger jsHeaderBurger"><span></span></div>
+          <div class="header__menu jsHeaderMenu">
+            <div class="header__nav-wrapper">
+              <nav class="header__nav"><a
+                  class="text-md text-bold link header__nav-link text-md text-bold link header__nav-link header__nav-link--hidden"
+                  href="catalog.html">Курсы</a><a class="text-md text-bold link header__nav-link" href="about.html">О
+                  школе</a><a class="text-md text-bold link header__nav-link" href="articles.html">Статьи</a><a
+                  class="text-md text-bold link header__nav-link" href="teachers.html">Команда</a><a
+                  class="text-md text-bold link header__nav-link" href="contacts.html">Контакты</a></nav>
+            </div>
+            <div class="header__contacts">
+              <div class="header__contacts-row"><span class="text header__contacts-label">Телефон</span><a
+                  class="text text-bold header__contacts-link" href="tel:88003321781">8 (800) 332-17-81 </a></div>
+            </div>
+            <div class="socials header__socials"><a class="socials__partner" href="main.html"><span
+                  class="socials__partner-label">при поддержке сервиса</span><img class="socials__partner-logo"
+                  src="assets/media/logo-w-label.svg" alt="Most психологи онлайн" /></a>
+              <div class="socials__media"><a class="socials__item" href="#" target="_blank"><svg
+                    class="icon socials__item-icon">
+                    <use xlink:href="#youtube"> </use>
+                  </svg></a><a class="socials__item" href="#" target="_blank"><svg class="icon socials__item-icon">
+                    <use xlink:href="#vk"> </use>
+                  </svg></a><a class="socials__item" href="#" target="_blank"><svg class="icon socials__item-icon">
+                    <use xlink:href="#telegram"> </use>
+                  </svg></a></div>
+            </div><a class="link text text-bold header__login" href="#"><svg class="icon">
+                <use xlink:href="#login"></use>
+              </svg><span>Вход</span></a>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
+    <main class="main">
+      <section class="section-404">
+        <div class="container section-404__container">
+          <div class="section-404__inner"> <img class="section-404__img" src="assets/media/404.svg" alt="" />
+            <div class="section-404__main">
+              <h1 class="h2 section-404__title">Вы потеряли курс на эту страницу...</h1>
+              <div class="text-lg text-medium section-404__text"> Она была удалена, либо никогда <br /> не существовала.
+                Лучше посмотрите, чему <br /> мы можем вас научить</div><a class="button section-404__button"
+                href="catalog.html"><span class="button__text">К курсам</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__sitemap">
+            <div class="footer__menu">
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="about.html">О школе</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="teachers.html">Команда</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="articles.html">Статьи</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <div class="text-md text-raleway text-bold footer__menu-title">Курсы </div>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Долгосрочные
+                    курсы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Краткосрочные
+                    курсы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Супервизия</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Терапевтические группы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Тренинги </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu footer__menu--lg">
+              <div class="text-md text-raleway text-bold footer__menu-title">Направления</div>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Гештальт</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Прикладной
+                    анализ поведения</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Экзистенциальный анализ</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">ACT
+                    терапия</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Транзактный
+                    анализ</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Нейропсихология</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Клиническая
+                    психология</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Психиатрия
+                    (медицина) </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__main">
+            <div class="footer__info">
+              <div class="text-xs footer__policy">Посещая данный сайт вы даете свое согласие на обработку персональных
+                данных <a class="link" href="#">Политика онфиденциальности</a></div>
+              <div class="text-xs footer__rights"><span>2022 ©</span><span>ООО "Высшая психологическая школа" </span>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-item">
+                <div class="text-md text-raleway text-bold footer__contacts-title">Телефон</div><a
+                  class="link text-md footer__contacts-link footer__contacts-link--gray" href="tel:89850544664">+7
+                  (985)-054-4664</a><a class="link text-md footer__contacts-link footer__contacts-link--gray"
+                  href="tel:89958952167">+7 (995)-895-2167</a>
+              </div>
+              <div class="footer__contacts-item">
+                <div class="text-md text-raleway text-bold footer__contacts-title">Адрес</div><a
+                  class="link text-xs footer__contacts-link footer__contacts-link--gray"
+                  href="https://yandex.ru/maps/-/CCURuISL-A" target="_blank">127473 Москва, ул. Селезневская, д. 11-а
+                  к.2 <br> Администрация: офис 521 <br> Аудитория: офис 417</a>
+              </div>
+              <div class="footer__contacts-item footer__contacts-item--row">
+                <div class="text-md text-raleway text-bold footer__contacts-title">E-mail</div><a
+                  class="link text-md footer__contacts-link"
+                  href="mailto:info@psyschool.com.ru">info@psyschool.com.ru</a>
+              </div>
+              <div class="footer__contacts-item"> <a class="link text-md footer__contacts-link" href="#">Реквизиты</a>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__socials-header"> <span class="text-xs text-inter">при поддержке сервиса</span><img
+                  class="footer__socials-logo" src="assets/media/logo-w-label.svg" alt="Most психологи онлайн" /></div>
+              <div class="footer__socials-list"> <a class="footer__socials-item" href="#"><svg
+                    class="icon footer__socials-icon">
+                    <use xlink:href="#youtube"> </use>
+                  </svg></a><a class="footer__socials-item" href="#"><svg class="icon footer__socials-icon">
+                    <use xlink:href="#vk"> </use>
+                  </svg></a><a class="footer__socials-item" href="#"><svg class="icon footer__socials-icon">
+                    <use xlink:href="#telegram"> </use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="modal modal--callback fade" id="callback" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"

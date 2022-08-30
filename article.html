@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Каталог курсов</title>
+    <title>Карточка курса</title>
     <script defer src="js/vendors/vendors.js"></script>
     <script defer src="js/main_styles/main_styles.js"></script>
     <script defer src="js/main_scripts/main_scripts.js"></script>
@@ -52,245 +52,163 @@
       </div>
     </header>
     <main class="main">
-      <section class="section-catalog">
-        <div class="container section-catalog__container">
-          <div class="section-catalog__inner">
-            <h2 class="h2 section-catalog__title">Курсы </h2>
-            <div class="filter jsFilter section-catalog__filter">
-              <div class="filter__header"> <a class="link filter__action-clear" href="#">Очистить</a><button
-                  class="filter__trigger jsFilterTrigger" type="button"><span class="filter__trigger-label"><span
-                      class="jsFilterCount">3</span></span><svg class="icon filter__trigger-icon">
-                    <use xlink:href="#filter"></use>
-                  </svg></button></div>
-              <div class="filter__content jsFilterContent"><svg class="icon filter__close jsFilterClose">
-                  <use xlink:href="#close"></use>
-                </svg>
-                <div class="badges filter__badges"><a class="badge is-active badges__item" href="#"><span
-                      class="badge__text">Любой</span></a><a class="badge badges__item" href="#"><span
-                      class="badge__text">Онлайн</span></a><a class="badge badges__item" href="#"><span
-                      class="badge__text">Очно</span></a></div>
-                <div class="filter__main">
-                  <form action="#">
-                    <div class="filter__list">
-                      <div class="filter__group jsFilterGroup is-active">
-                        <div class="filter__group-header jsFilterGroupTrigger">
-                          <div class="text text-bold filter__group-title">Виды курсов </div><svg
-                            class="icon filter__group-icon">
-                            <use xlink:href="#arrow--right"></use>
-                          </svg>
-                        </div>
-                        <div class="filter__group-body jsFilterGroupBody">
-                          <div class="filter__group-list jsFilterGroupContent"><label
-                              class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox" checked="checked" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Долгосрочные</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Краткосрочные</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Супервизия</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Тренинги</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Терапевтические группы</div>
-                                </div>
-                              </div>
-                            </label></div>
-                        </div>
-                      </div>
-                      <div class="filter__group jsFilterGroup is-active">
-                        <div class="filter__group-header jsFilterGroupTrigger">
-                          <div class="text text-bold filter__group-title">Направления </div><svg
-                            class="icon filter__group-icon">
-                            <use xlink:href="#arrow--right"></use>
-                          </svg>
-                        </div>
-                        <div class="filter__group-body jsFilterGroupBody">
-                          <div class="filter__group-list jsFilterGroupContent"><label
-                              class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" checked="checked" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Гештальт</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Экзистенциальный анализ</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Транзактный анализ</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Клиническая психология</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Прикладной анализ поведения</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">ACT терапия</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Нейропсихология</div>
-                                </div>
-                              </div>
-                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
-                                type="checkbox" name="checkbox-2" />
-                              <div class="checkbox__wrapper">
-                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
-                                    <use xlink:href="#checkbox"></use>
-                                  </svg></div>
-                                <div class="checkbox__content">
-                                  <div class="text checkbox__text">Психиатрия (медицина)</div>
-                                </div>
-                              </div>
-                            </label></div>
-                        </div>
-                      </div>
-                      <div class="filter__group jsFilterGroup is-active">
-                        <div class="filter__group-header jsFilterGroupTrigger">
-                          <div class="text text-bold filter__group-title">Уровень курса </div><svg
-                            class="icon filter__group-icon">
-                            <use xlink:href="#arrow--right"></use>
-                          </svg>
-                        </div>
-                        <div class="filter__group-body jsFilterGroupBody">
-                          <div class="filter__group-list jsFilterGroupContent"><label class="radio filter__radio"><input
-                                class="radio__input jsRadio" type="radio" name="radio" checked="checked" /><span
-                                class="radio__wrapper"> <span class="radio__icon-wrapper">
-                                  <div class="radio__icon"></div>
-                                </span><span class="radio__content"> <span
-                                    class="text radio__text">Любой</span></span></span></label><label
-                              class="radio filter__radio"><input class="radio__input jsRadio" type="radio"
-                                name="radio" /><span class="radio__wrapper"> <span class="radio__icon-wrapper">
-                                  <div class="radio__icon"></div>
-                                </span><span class="radio__content"> <span class="text radio__text">Для
-                                    начинающих</span></span></span></label><label class="radio filter__radio"><input
-                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
-                                <span class="radio__icon-wrapper">
-                                  <div class="radio__icon"></div>
-                                </span><span class="radio__content"> <span class="text radio__text">Повышение
-                                    квалификации</span></span></span></label><label class="radio filter__radio"><input
-                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
-                                <span class="radio__icon-wrapper">
-                                  <div class="radio__icon"></div>
-                                </span><span class="radio__content"> <span class="text radio__text">Для специалистов и
-                                    студентов</span></span></span></label><label class="radio filter__radio"><input
-                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
-                                <span class="radio__icon-wrapper">
-                                  <div class="radio__icon"></div>
-                                </span><span class="radio__content"> <span class="text radio__text">Для всех
-                                    желающих</span></span></span></label></div>
-                        </div>
-                      </div>
-                      <div class="filter__privileges-block">
-                        <div class="filter__privileges-title-wrapper">
-                          <div class="text-lg text-bold filter__privileges-title">С привелегиями на <a class="link"
-                              href="#">mostMe.ru</a></div>
-                          <div class="tooltip filter__privileges-tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div><label class="tumbler filter__privileges-tumbler"><input class="tumbler__input"
-                            type="checkbox" name="tumbler" /><span class="tumbler__icon"></span></label>
-                      </div>
-                    </div>
-                    <div class="filter__actions"> <a class="link filter__action-clear" href="#">Очистить</a><button
-                        class="button button--border filter__action-button" type="button"><span
-                          class="button__text">Применить</span></button></div>
-                  </form>
+      <article class="article article--lg">
+        <div class="container article__container">
+          <div class="article__header">
+            <div class="h2 article__header-title">
+              <h1>Социальная тревожность и как с ней бороться</h1>
+            </div>
+            <div class="article__header-img"> <img src="assets/media/article-preview.jpg" alt="" /></div>
+          </div>
+          <div class="article__inner">
+            <div class="article__group">
+              <div class="article__block">
+                <blockquote>
+                  <h3>Если у вас социальная тревожность, вы избегаете появляться в обществе, опасаясь подвергать себя
+                    чужому суждению и вниманию. Лечение существует</h3>
+                </blockquote>
+              </div>
+              <div class="article__author">
+                <div class="article__author-img"> <img src="assets/media/article-author.jpg" alt="" /></div>
+                <div class="article__author-main">
+                  <p>Автор статьи</p><a href="#">
+                    <h4>Татьяна Руданец</h4>
+                  </a>
+                </div>
+              </div>
+              <div class="article__block">
+                <p>Социальная тревожность раннее называлась социальной фобией, и она похожа на фобию тем, что страх
+                  перед ситуацией становится настолько сильным, что участие в ней кажется вам невозможным. Как и в
+                  случае с другими фобиями, со страхом и желанием уклониться от ситуации можно научиться справляться, но
+                  это нужно делать постепенно и в безопасной среде. Социальная тревожность означает, что вы испытываете
+                  беспокойство от участия в социальных ситуациях, в которых вас может подавить чувство стыда и
+                  дискомфорта.</p>
+              </div>
+              <div class="article__block">
+                <div class="article__border article__border--fill">
+                  <p>Социальная тревожность (синонимы: социофобия, социальное тревожное расстройство) — страх того, что
+                    на виду у других людей будет сделано что-то, что вызовет негативную оценку у окружающих.</p>
                 </div>
               </div>
             </div>
-            <div class="section-catalog__main">
-              <div class="section-catalog__list">
-                <div class="section-catalog__group">
-                  <h5 class="h5 section-catalog__category-title">Долгосрочные</h5><a
-                    class="card-course section-catalog__card" href="course.html">
+            <div class="article__group">
+              <h2>Как распознать социофобию? </h2>
+              <div class="article__block">
+                <p>Социальное тревожное расстройство проявляется только во время социального действия (общение,
+                  выступление, знакомство). В изоляции или в привычном постоянном общении социофобия может не
+                  проявляться.</p>
+              </div>
+              <div class="article__block">
+                <h3>Признаками социального тревожного расстройства являются навязчивые страхи:</h3>
+                <ul>
+                  <li>
+                    <p>осуждения;</p>
+                  </li>
+                  <li>
+                    <p>смущения или униженности;</p>
+                  </li>
+                  <li>
+                    <p>общения с группой людей в целом или с незнакомыми;</p>
+                  </li>
+                  <li>
+                    <p>быть замеченным, что выглядишь обеспокоенным;</p>
+                  </li>
+                  <li>
+                    <p>физических проявлений смущения, например, покраснения лица, потливости, дрожи тела или дрожащего
+                      голоса.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="article__aside">
+                <div class="article__aside-content">
+                  <p>Гештальт-терапия одна из первых успешно зарекомендовал себя в России</p>
+                </div>
+              </div>
+              <div class="article__block">
+                <div class="slider jsSliderArticleGallery article__slider">
+                  <div class="swiper slider__inner">
+                    <div class="swiper-wrapper slider__wrapper">
+                      <div class="swiper-slide slider__slide">
+                        <div class="article__media"><img src="assets/media/article-slide-1.jpg" alt="" /></div>
+                      </div>
+                      <div class="swiper-slide slider__slide">
+                        <div class="article__media"> <a data-fancybox="reviews"
+                            data-src="https://www.youtube.com/watch?v=jfKfPfyJRdk"><img
+                              src="assets/media/article-slide-1.jpg" alt="" /></a></div>
+                      </div>
+                    </div>
+                    <div class="slider__navigation">
+                      <div class="swiper-button-prev slider__button slider__button--prev"><svg
+                          class="icon slider__button-icon">
+                          <use xlink:href="#arrow--left"></use>
+                        </svg></div>
+                      <div class="swiper-button-next slider__button slider__button--next"><svg
+                          class="icon slider__button-icon">
+                          <use xlink:href="#arrow--right"></use>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination slider__pagination"></div>
+                </div>
+              </div>
+              <div class="article__block">
+                <p>Социальная тревожность сильно портит жизнь, потому что человек старается максимально ограничить
+                  контакт с другими людьми, что приводит к затруднениям как в простых повседневных ситуациях, так и в
+                  более глобальных, поскольку не позволяет ему ставить и решать важные для него цели и задачи (работа,
+                  семейная жизнь), а в крайне тяжелых случаях может привести к практически полной социальной изоляции.
+                </p>
+              </div>
+              <div class="block-info block-info--border article__block-info">
+                <div class="container">
+                  <div class="block-info__inner">
+                    <p class="h3 block-info__text"><span> I ступень гештальт-терапии </span> - это возможность получить
+                      образование и клиентский опыт в решении трудных жизненных вопросов при помощи одного из наиболее
+                      эффективных современных направлений психотерапии</p>
+                  </div>
+                </div>
+              </div>
+              <div class="article__block">
+                <p>Социальная тревожность сильно портит жизнь, потому что человек старается максимально ограничить
+                  контакт с другими людьми, что приводит к затруднениям как в простых повседневных ситуациях, так и в
+                  более глобальных, поскольку не позволяет ему ставить и решать важные для него цели и задачи (работа,
+                  семейная жизнь), а в крайне тяжелых случаях может привести к практически полной <a href="#">социальной
+                    изоляции</a>.</p>
+              </div>
+            </div>
+            <div class="article__group">
+              <h2>Каковы причины тревожности?</h2>
+              <div class="article__block">
+                <h4>Генетика</h4>
+                <p>Тревожные расстройства, обычно, возникают еще внутри семьи, тем не менее, не совсем понятно, сколько
+                  из этого может быть связано с генетикой и сколько из-за выученного поведения. </p>
+                <h4>Структурные особенности мозга</h4>
+                <p>Структура в мозге, называемая миндалиной, может играть роль в управлении реакцией страха. Люди с
+                  гиперактивной миндалиной могут иметь повышенную реакцию страха.</p>
+                <h4>Внешние факторы</h4>
+                <p>У многих людей социофобия может развиться состояние после психотравмирующей социальной ситуации
+                  (например после нападения, насилия).</p>
+              </div>
+              <div class="article__aside">
+                <div class="article__aside-content">
+                  <h2><strong>10</strong> лет</h2>
+                  <p>Занятия проводят преподаватели со стажем работы от 10 лет и более, выпустившие не одно поколение
+                    востребованных специалистов</p>
+                </div>
+              </div>
+              <div class="article__block">
+                <ol>
+                  <li>
+                    <p>По данным психологов РАН, в 2020 году каждый третий россиянин жаловался на симптомы депрессивных
+                      расстройств.</p>
+                  </li>
+                  <li>
+                    <p>О высоком уровне стресса у европейцев говорится в исследовании, опубликованном в январе 2021-го в
+                      авторитетном медицинском журнале Lancet. </p>
+                  </li>
+                </ol>
+              </div>
+              <div class="article__block">
+                <div class="article__card"> <a class="card-course section-catalog__card" href="course.html">
                     <div class="card-course__inner">
                       <div class="card-course__header">
                         <div class="card-course__title-wrapper">
@@ -319,176 +237,80 @@
                       <source media="(max-width: 767px)" srcset="assets/media/course-1--md.png" /><img
                         src="assets/media/course-1.png" alt="" />
                     </picture>
-                  </a><a class="card-course section-catalog__card" href="course.html">
-                    <div class="card-course__inner">
-                      <div class="card-course__header">
-                        <div class="card-course__title-wrapper">
-                          <h4 class="h4 card-course__title">Гештальт-терапия, 1 ступень</h4>
-                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text text-medium card-course__level">Для начинающих</p>
-                      </div>
-                      <div class="card-course__body">
-                        <div class="card-course__labels"> <span
-                            class="text card-course__label card-course__label--online">Онлайн</span><span
-                            class="text card-course__label card-course__label">Очно</span></div>
-                        <div class="card-course__time"> <svg class="icon">
-                            <use xlink:href="#clock"></use>
-                          </svg><span class="text-lg text-semibold">140 ч.</span></div>
-                      </div>
-                    </div>
-                    <picture class="card-course__img">
-                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
-                        src="assets/media/course-2.png" alt="" />
-                    </picture>
-                  </a><a class="card-course section-catalog__card" href="course.html">
-                    <div class="card-course__inner">
-                      <div class="card-course__header">
-                        <div class="card-course__title-wrapper">
-                          <h4 class="h4 card-course__title">Гештальт-терапия, 2 ступень</h4>
-                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text text-medium card-course__level">Для начинающих</p>
-                      </div>
-                      <div class="card-course__body">
-                        <div class="card-course__labels"> <span
-                            class="text card-course__label card-course__label">Очно</span></div>
-                        <div class="card-course__time"> <svg class="icon">
-                            <use xlink:href="#clock"></use>
-                          </svg><span class="text-lg text-semibold">144 ч.</span></div>
-                      </div>
-                    </div>
-                    <picture class="card-course__img">
-                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
-                        src="assets/media/course-3.png" alt="" />
-                    </picture>
-                  </a><a class="card-course section-catalog__card" href="course.html">
-                    <div class="card-course__inner">
-                      <div class="card-course__header">
-                        <div class="card-course__title-wrapper">
-                          <h4 class="h4 card-course__title">Гештальт-терапия, 3 ступень</h4>
-                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text text-medium card-course__level">Для начинающих</p>
-                      </div>
-                      <div class="card-course__body">
-                        <div class="card-course__labels"> <span
-                            class="text card-course__label card-course__label--online">Онлайн</span></div>
-                        <div class="card-course__time"> <svg class="icon">
-                            <use xlink:href="#clock"></use>
-                          </svg><span class="text-lg text-semibold">100 ч.</span></div>
-                      </div>
-                    </div>
-                    <picture class="card-course__img">
-                      <source media="(max-width: 767px)" srcset="assets/media/course-4--md.png" /><img
-                        src="assets/media/course-4.png" alt="" />
-                    </picture>
-                  </a>
-                </div>
-                <div class="section-catalog__group">
-                  <h5 class="h5 section-catalog__category-title">Долгосрочные</h5><a
-                    class="card-course section-catalog__card" href="course.html">
-                    <div class="card-course__inner">
-                      <div class="card-course__header">
-                        <div class="card-course__title-wrapper">
-                          <h4 class="h4 card-course__title">Зависимость и созависимость</h4>
-                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text text-medium card-course__level">Для начинающих</p>
-                      </div>
-                      <div class="card-course__body">
-                        <div class="card-course__labels"> <span
-                            class="text card-course__label card-course__label--online">Онлайн</span></div>
-                        <div class="card-course__time"> <svg class="icon">
-                            <use xlink:href="#clock"></use>
-                          </svg><span class="text-lg text-semibold">100 ч.</span></div>
-                      </div>
-                    </div>
-                    <picture class="card-course__img">
-                      <source media="(max-width: 767px)" srcset="assets/media/course-1--md.png" /><img
-                        src="assets/media/course-1.png" alt="" />
-                    </picture>
-                  </a><a class="card-course section-catalog__card" href="course.html">
-                    <div class="card-course__inner">
-                      <div class="card-course__header">
-                        <div class="card-course__title-wrapper">
-                          <h4 class="h4 card-course__title">Терапевтическая группа с Ириной Исаевой</h4>
-                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
-                              <use xlink:href="#attention"></use>
-                            </svg>
-                            <div class="tooltip__content">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
-                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
-                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="text text-medium card-course__level">Для начинающих</p>
-                      </div>
-                      <div class="card-course__body">
-                        <div class="card-course__labels"> <span
-                            class="text card-course__label card-course__label--online">Онлайн</span><span
-                            class="text card-course__label card-course__label">Очно</span></div>
-                        <div class="card-course__time"> <svg class="icon">
-                            <use xlink:href="#clock"></use>
-                          </svg><span class="text-lg text-semibold">140 ч.</span></div>
-                      </div>
-                    </div>
-                    <picture class="card-course__img">
-                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
-                        src="assets/media/course-2.png" alt="" />
-                    </picture>
-                  </a>
+                  </a></div>
+              </div>
+            </div>
+            <div class="article__group">
+              <h2>Когда следует обратиться за помощью?</h2>
+              <div class="article__block">
+                <p>Социальная тревожность сильно портит жизнь, потому что человек старается максимально ограничить
+                  контакт с другими людьми, что приводит к затруднениям как в простых повседневных ситуациях, так и в
+                  более глобальных, поскольку не позволяет ему ставить и решать важные для него цели и задачи (учеба,
+                  работа, семейная жизнь), а в крайне тяжелых случаях может привести к практически полной социальной
+                  изоляции.</p>
+              </div>
+              <div class="article__block">
+                <div class="article__media"> <a data-fancybox="reviews"
+                    data-src="https://www.youtube.com/watch?v=jfKfPfyJRdk"><img src="assets/media/article-slide-1.jpg"
+                      alt="" /></a></div>
+                <p>Советы о том, как быстро побороть тревожность в толпе</p>
+              </div>
+            </div>
+            <div class="article__group">
+              <h2>Как лечить социальную тревожность?</h2>
+              <div class="article__block">
+                <p>Если общение с людьми вызывает сильный страх или панику – это повод обратиться к врачу. Тревожное
+                  социальное расстройство хорошо поддается лечению с помощью психотерапии и лекарственных средств.</p>
+              </div>
+              <div class="article__aside">
+                <div class="article__aside-content">
+                  <p>При лечении учитываются индивидуальные особенности организма, длительность тревоги и влияние
+                    окружающей среды (семья, работа, соседи и т.п.).</p>
                 </div>
               </div>
-              <div class="pagination section-catalog__pagination">
-                <div class="pagination__list"> <a class="pagination__item-icon" href="#"><svg class="icon">
-                      <use xlink:href="#arrow--left"></use>
-                    </svg></a><a class="pagination__item is-active" href="#"> <span>01</span></a><a
-                    class="pagination__item" href="#"> <span>02</span></a><a class="pagination__item" href="#">
-                    <span>03</span></a><a class="pagination__item" href="#"> <span>04</span></a><a
-                    class="pagination__item" href="#"> <span>05</span></a><a class="pagination__item-icon" href="#"><svg
-                      class="icon">
-                      <use xlink:href="#arrow--right"></use>
-                    </svg></a></div><a class="button button--border pagination__button" href="#"><span
-                    class="button__text">Показать еще</span></a>
+              <div class="article__block">
+                <h3>Лечение социофобий включает данные методы :</h3>
+                <ul>
+                  <li>
+                    <p>Психотерапия</p>
+                  </li>
+                  <li>
+                    <p>БОС-терапия</p>
+                  </li>
+                  <li>
+                    <p>Медикаментозное лечение (нейрометаболическая терапия, психофармакотерапия)</p>
+                  </li>
+                  <li>
+                    <p>Физиотерапия</p>
+                  </li>
+                  <li>
+                    <p>Массаж. Лечебная физкультура</p>
+                  </li>
+                </ul>
               </div>
+              <div class="article__block">
+                <div class="article__border">
+                  <p>Социальная тревожность или социофобии – серьезная проблема для человека. Но поговорив с кем-нибудь,
+                    вы сможете лучше понять себя и свои реакции в разных ситуациях. Вы также можете участвовать в
+                    групповой терапии.как и любое тревожное расстройство, социальная фобия успешно поддается коррекции.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="article__socials">
+              <div class="text-lg text-semibold article__socials-title">Поделиться :</div>
+              <div class="article__socials-list"> <a class="article__socials-item" href="#"> <svg
+                    class="icon article__socials-icon">
+                    <use xlink:href="#vk"></use>
+                  </svg></a><a class="article__socials-item" href="#"> <svg class="icon article__socials-icon">
+                    <use xlink:href="#telegram"></use>
+                  </svg></a><a class="article__socials-item" href="#"> <svg class="icon article__socials-icon">
+                    <use xlink:href="#youtube"></use>
+                  </svg></a></div>
             </div>
           </div>
         </div>
-      </section>
+      </article>
     </main>
     <footer class="footer">
       <div class="container footer__container">
