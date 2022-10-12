@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Контакты</title>
+    <title>Карта сайта</title>
     <script defer src="js/vendors/vendors.js"></script>
     <script defer src="js/main_styles/main_styles.js"></script>
     <script defer src="js/main_scripts/main_scripts.js"></script>
@@ -52,62 +52,30 @@
       </div>
     </header>
     <main class="main">
-      <section class="contacts">
-        <div class="contacts__map-wrapper">
-          <div class="contacts__map jsMapContacts" data-coordinates="[37.604259, 55.781357]"><iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A4ab5fb8a76ee0221cd4ca69101080a0c100d6c509346f8c47dc3f53844b23cf5&amp;source=constructor"
-              frameborder="0"></iframe></div>
-        </div>
-        <div class="contacts__main">
-          <div class="container">
-            <div class="contacts__inner">
-              <h1 class="contacts__title">Ждём вас!</h1>
-              <div class="contacts__row">
-                <div class="contacts__col">
-                  <div class="text-xs text-bold contacts__col-title">Телефон</div>
-                  <div class="contacts__col-content"> <a
-                      class="link text-xl text-bold contacts__link contacts__link--black" href="tel:88003321781">8 (800)
-                      332-17-81</a></div>
-                </div>
-                <div class="contacts__col">
-                  <div class="text-xs text-bold contacts__col-title">e-mail</div>
-                  <div class="contacts__col-content"> <a class="link text text-bold contacts__link"
-                      href="mailto:info@most-school.ru">info@most-school.ru</a></div>
-                </div>
-                <div class="contacts__col">
-                  <div class="text-xs text-bold contacts__col-title">Адрес </div>
-                  <div class="contacts__col-content">
-                    <div class="text contacts__text">127473 Москва, Россия ул. Селезневская, д. 11-а к.2 <br />
-                      Администрация: офис 521 <br /> Аудитория: офис 417</div>
+      <section class="section-payment">
+        <div class="container">
+          <div class="section-payment__inner">
+            <div class="section-payment__content">
+              <div class="section-payment__header">
+                <h1 class="h2 section-payment__title">Спасибо что записались</h1>
+              </div>
+              <div class="section-payment__body">
+                <div class="section-payment__items">
+                  <div class="section-payment__item"> <a class="text text-bold link section-payment__item-title"
+                      href="course.html">Модуль 1: История и методология гештальт-терапии</a>
+                    <div class="section-payment__item-price">3 500 ₽</div>
                   </div>
                 </div>
               </div>
-              <div class="contacts__row contacts__row--center">
-                <div class="contacts__col contacts__col--req">
-                  <div class="contacts__col-content">
-                    <div class="text contacts__text">Будь в курсе событий </div><a
-                      class="link text text-bold contacts__link" href="#">Реквизиты</a>
-                  </div>
-                </div>
-                <div class="contacts__col contacts__col--soc">
-                  <div class="contacts__col-content">
-                    <div class="contacts__socials"> <a class="contacts__socials-item" href="#"> <svg class="icon">
-                          <use xlink:href="#telegram"></use>
-                        </svg></a><a class="contacts__socials-item" href="#"> <svg class="icon">
-                          <use xlink:href="#vk"></use>
-                        </svg></a><a class="contacts__socials-item" href="#"> <svg class="icon">
-                          <use xlink:href="#youtube"></use>
-                        </svg></a></div>
-                  </div>
-                </div>
-                <div class="contacts__col contacts__col--actions">
-                  <div class="contacts__col-content"> <button class="button button--border contacts__button"
-                      type="button" data-bs-toggle="modal" data-bs-target="#callback"><span
-                        class="button__text">Обратная связь</span></button><a class="link text text-bold contacts__link"
-                      href="#">Реквизиты</a></div>
-                </div>
+              <div class="section-payment__footer">
+                <div class="text-sm section-payment__footer-text">Остались вопросы? Можете <br /> <a class="link"
+                    data-bs-toggle="modal" data-bs-target="#callback">связаться с нами</a></div><a
+                  class="button section-payment__item-button" href="#" data-bs-toggle="modal"
+                  data-bs-target="#payment"><span class="button__text">Оплатить </span></a>
               </div>
             </div>
+            <div class="section-payment__img-wrapper"> <img class="section-payment__img" src="assets/media/payment.svg"
+                alt="" /></div>
           </div>
         </div>
       </section>
