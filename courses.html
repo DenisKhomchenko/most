@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Каталог курсов</title>
+    <script defer src="js/vendors/vendors.js"></script>
+    <script defer src="js/main_styles/main_styles.js"></script>
+    <script defer src="js/main_scripts/main_scripts.js"></script>
+    <link href="css/vendors/vendors.css" rel="stylesheet">
+    <link href="css/main_styles/main_styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header jsHeader">
+      <div class="container header__container">
+        <div class="header__inner"> <a class="logo header__logo" href="index.html"><img class="logo__pic"
+              src="assets/media/logo-compact.svg" alt="Most" /><img class="logo__label"
+              src="assets/media/logo-compact-label.svg" alt="Институт психологии и психотерапии" /></a><a
+            class="button button--border header__button" href="courses.html"><span
+              class="header__link-title">Курсы</span></a>
+          <div class="header__burger jsHeaderBurger"><span></span></div>
+          <div class="header__menu jsHeaderMenu">
+            <div class="header__menu-content">
+              <div class="nav header__nav jsNav">
+                <nav class="nav__list"> <a class="nav__item nav__item--hidden" href="courses.html">Курсы</a><a
+                    class="nav__item is-active" href="catalog.html">Каталог</a><a class="nav__item"
+                    href="teachers.html">Команда</a><a class="nav__item" href="teachers.html">Психологи</a><a
+                    class="nav__item" href="articles.html">Статьи</a><a class="nav__item" href="about.html">О
+                    школе</a><a class="nav__item" href="contacts.html">Контакты</a></nav>
+                <div class="nav__more"><button class="nav__trigger jsNavTrigger" type="button"><svg class="icon">
+                      <use xlink:href="#more--simple"></use>
+                    </svg></button>
+                  <div class="nav__dropdown jsNavDropdown">
+                    <div class="nav__dropdown-inner"> </div>
+                  </div>
+                </div>
+                <div class="search header__search jsSearch"><button class="search__trigger jsSearchTrigger"
+                    type="button"><svg class="icon">
+                      <use xlink:href="#search--decor"></use>
+                    </svg></button>
+                  <div class="search-input search__input"><button class="search-input__button" type="submit"><svg
+                        class="icon">
+                        <use xlink:href="#search"></use>
+                      </svg></button><input class="search-input__field jsInput" type="text"
+                      placeholder="Введите данные поиска" name="searh" autocomplete="on" /><button
+                      class="search-input__trigger jsInputClear" type="button"><svg class="icon">
+                        <use xlink:href="#close"></use>
+                      </svg></button></div>
+                  <div class="search-dropdown search__dropdown jsSearchDropdown">
+                    <div class="container search-dropdown__container">
+                      <div class="search-dropdown__header">
+                        <h3 class="search-dropdown__title">Поиск</h3>
+                        <p class="search-dropdown__subtitle">15 результатов поиска</p><a
+                          class="search-dropdown__reset jsSearchReset" href="#">Сбросить</a>
+                      </div>
+                      <div class="search-dropdown__list">
+                        <div class="search-block">
+                          <div class="search-block__header">
+                            <h4 class="search-block__title">Психологи</h4>
+                          </div>
+                          <div class="search-block__list"> <a class="card-teacher" href="#">
+                              <picture class="card-teacher__img"> <img src="assets/media/1.jpg" alt="" /></picture>
+                              <div class="card-teacher__inner">
+                                <h4>Светлана Мардоян</h4>
+                              </div>
+                            </a><a class="card-teacher" href="#">
+                              <picture class="card-teacher__img"> <img src="assets/media/1.jpg" alt="" /></picture>
+                              <div class="card-teacher__inner">
+                                <h4>Светлана Мардоян</h4>
+                              </div>
+                            </a><a class="card-teacher" href="#">
+                              <picture class="card-teacher__img"> <img src="assets/media/1.jpg" alt="" /></picture>
+                              <div class="card-teacher__inner">
+                                <h4>Светлана Мардоян</h4>
+                              </div>
+                            </a></div>
+                        </div>
+                        <div class="search-block">
+                          <div class="search-block__header">
+                            <h4 class="search-block__title">Курсы</h4>
+                          </div>
+                          <div class="search-block__list"> <a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/course-1.png" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a><a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/course-1.png" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a><a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/course-1.png" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a></div>
+                        </div>
+                        <div class="search-block">
+                          <div class="search-block__header">
+                            <h4 class="search-block__title">Статьи</h4>
+                          </div>
+                          <div class="search-block__list"> <a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/article-preview.jpg" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a><a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/article-preview.jpg" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a><a class="card-search" href="#">
+                              <picture class="card-search__img"> <img src="assets/media/article-preview.jpg" alt="" />
+                              </picture>
+                              <div class="card-search__inner">
+                                <h4>Зависимость и созависимость</h4>
+                                <div class="card-search__text">
+                                  <p>Для начинающих</p>
+                                </div>
+                              </div>
+                            </a></div>
+                        </div>
+                      </div><a class="button button--border search-dropdown__button" href="#"><span
+                          class="button__text">Показать все результаты</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header__contacts">
+              <div class="header__contacts-row"><span class="text header__contacts-label">Телефон</span><a
+                  class="text text-bold header__contacts-link" href="tel:88003321781">8 (800) 332-17-81 </a></div>
+            </div>
+            <div class="socials header__socials"><a class="socials__partner" href="main.html"><span
+                  class="socials__partner-label">при поддержке сервиса</span><img class="socials__partner-logo"
+                  src="assets/media/logo-w-label.svg" alt="Most психологи онлайн" /></a>
+              <div class="socials__media"><a class="socials__item" href="#" target="_blank"><svg
+                    class="icon socials__item-icon">
+                    <use xlink:href="#youtube"> </use>
+                  </svg></a><a class="socials__item" href="#" target="_blank"><svg class="icon socials__item-icon">
+                    <use xlink:href="#vk"> </use>
+                  </svg></a><a class="socials__item" href="#" target="_blank"><svg class="icon socials__item-icon">
+                    <use xlink:href="#telegram"> </use>
+                  </svg></a><a class="socials__item" href="#" target="_blank"><svg class="icon socials__item-icon">
+                    <use xlink:href="#whatsapp"> </use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-catalog">
+        <div class="container section-catalog__container">
+          <div class="section-catalog__inner">
+            <h2 class="h2 section-catalog__title">Курсы </h2>
+            <div class="filter jsFilter section-catalog__filter">
+              <div class="filter__header"> <a class="link filter__action-clear" href="#">Очистить</a><button
+                  class="filter__trigger jsFilterTrigger" type="button"><span class="filter__trigger-label"><span
+                      class="jsFilterCount">3</span></span><svg class="icon filter__trigger-icon">
+                    <use xlink:href="#filter"></use>
+                  </svg></button></div>
+              <div class="filter__content jsFilterContent"><svg class="icon filter__close jsFilterClose">
+                  <use xlink:href="#close"></use>
+                </svg>
+                <div class="badges filter__badges"><a class="badge is-active badges__item" href="#"><span
+                      class="badge__text">Любой</span></a><a class="badge badges__item" href="#"><span
+                      class="badge__text">Онлайн</span></a><a class="badge badges__item" href="#"><span
+                      class="badge__text">Очно</span></a></div>
+                <div class="filter__main">
+                  <form action="#">
+                    <div class="filter__list">
+                      <div class="filter__group jsFilterGroup is-active">
+                        <div class="filter__group-header jsFilterGroupTrigger">
+                          <div class="text text-bold filter__group-title">Виды курсов </div><svg
+                            class="icon filter__group-icon">
+                            <use xlink:href="#arrow--right"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__group-body jsFilterGroupBody">
+                          <div class="filter__group-list jsFilterGroupContent"><label
+                              class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Долгосрочные</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Краткосрочные</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Супервизия</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Тренинги</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Терапевтические группы</div>
+                                </div>
+                              </div>
+                            </label></div>
+                        </div>
+                      </div>
+                      <div class="filter__group jsFilterGroup is-active">
+                        <div class="filter__group-header jsFilterGroupTrigger">
+                          <div class="text text-bold filter__group-title">Направления </div><svg
+                            class="icon filter__group-icon">
+                            <use xlink:href="#arrow--right"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__group-body jsFilterGroupBody">
+                          <div class="filter__group-list jsFilterGroupContent"><label
+                              class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" checked="checked" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Гештальт</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Экзистенциальный анализ</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Транзактный анализ</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Клиническая психология</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Прикладной анализ поведения</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">ACT терапия</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Нейропсихология</div>
+                                </div>
+                              </div>
+                            </label><label class="checkbox filter__checkbox"><input class="checkbox__input jsCheckbox"
+                                type="checkbox" name="checkbox-2" />
+                              <div class="checkbox__wrapper">
+                                <div class="checkbox__icon-wrapper"><svg class="icon checkbox__icon">
+                                    <use xlink:href="#checkbox"></use>
+                                  </svg></div>
+                                <div class="checkbox__content">
+                                  <div class="text checkbox__text">Психиатрия (медицина)</div>
+                                </div>
+                              </div>
+                            </label></div>
+                        </div>
+                      </div>
+                      <div class="filter__group jsFilterGroup is-active">
+                        <div class="filter__group-header jsFilterGroupTrigger">
+                          <div class="text text-bold filter__group-title">Уровень курса </div><svg
+                            class="icon filter__group-icon">
+                            <use xlink:href="#arrow--right"></use>
+                          </svg>
+                        </div>
+                        <div class="filter__group-body jsFilterGroupBody">
+                          <div class="filter__group-list jsFilterGroupContent"><label class="radio filter__radio"><input
+                                class="radio__input jsRadio" type="radio" name="radio" checked="checked" /><span
+                                class="radio__wrapper"> <span class="radio__icon-wrapper">
+                                  <div class="radio__icon"></div>
+                                </span><span class="radio__content"> <span
+                                    class="text radio__text">Любой</span></span></span></label><label
+                              class="radio filter__radio"><input class="radio__input jsRadio" type="radio"
+                                name="radio" /><span class="radio__wrapper"> <span class="radio__icon-wrapper">
+                                  <div class="radio__icon"></div>
+                                </span><span class="radio__content"> <span class="text radio__text">Для
+                                    начинающих</span></span></span></label><label class="radio filter__radio"><input
+                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
+                                <span class="radio__icon-wrapper">
+                                  <div class="radio__icon"></div>
+                                </span><span class="radio__content"> <span class="text radio__text">Повышение
+                                    квалификации</span></span></span></label><label class="radio filter__radio"><input
+                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
+                                <span class="radio__icon-wrapper">
+                                  <div class="radio__icon"></div>
+                                </span><span class="radio__content"> <span class="text radio__text">Для специалистов и
+                                    студентов</span></span></span></label><label class="radio filter__radio"><input
+                                class="radio__input jsRadio" type="radio" name="radio" /><span class="radio__wrapper">
+                                <span class="radio__icon-wrapper">
+                                  <div class="radio__icon"></div>
+                                </span><span class="radio__content"> <span class="text radio__text">Для всех
+                                    желающих</span></span></span></label></div>
+                        </div>
+                      </div>
+                      <div class="filter__privileges-block">
+                        <div class="filter__privileges-title-wrapper">
+                          <div class="text-lg text-bold filter__privileges-title">С привелегиями на <a class="link"
+                              href="#">mostMe.ru</a></div>
+                          <div class="tooltip filter__privileges-tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div><label class="tumbler filter__privileges-tumbler"><input class="tumbler__input"
+                            type="checkbox" name="tumbler" /><span class="tumbler__icon"></span></label>
+                      </div>
+                    </div>
+                    <div class="filter__actions"> <a class="link filter__action-clear" href="#">Очистить</a><button
+                        class="button button--border filter__action-button" type="button"><span
+                          class="button__text">Применить</span></button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="section-catalog__main">
+              <div class="section-catalog__list">
+                <div class="section-catalog__group">
+                  <h5 class="h5 section-catalog__category-title">Долгосрочные</h5><a
+                    class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Зависимость и созависимость</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label--online">Онлайн</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">100 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-1--md.png" /><img
+                        src="assets/media/course-1.png" alt="" />
+                    </picture>
+                  </a><a class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Гештальт-терапия, 1 ступень</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label--online">Онлайн</span><span
+                            class="text card-course__label card-course__label">Очно</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">140 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
+                        src="assets/media/course-2.png" alt="" />
+                    </picture>
+                  </a><a class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Гештальт-терапия, 2 ступень</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label">Очно</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">144 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
+                        src="assets/media/course-3.png" alt="" />
+                    </picture>
+                  </a><a class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Гештальт-терапия, 3 ступень</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label--online">Онлайн</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">100 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-4--md.png" /><img
+                        src="assets/media/course-4.png" alt="" />
+                    </picture>
+                  </a>
+                </div>
+                <div class="section-catalog__group">
+                  <h5 class="h5 section-catalog__category-title">Долгосрочные</h5><a
+                    class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Зависимость и созависимость</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label--online">Онлайн</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">100 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-1--md.png" /><img
+                        src="assets/media/course-1.png" alt="" />
+                    </picture>
+                  </a><a class="card-course section-catalog__card" href="course.html">
+                    <div class="card-course__inner">
+                      <div class="card-course__header">
+                        <div class="card-course__title-wrapper">
+                          <h4 class="h4 card-course__title">Терапевтическая группа с Ириной Исаевой</h4>
+                          <div class="tooltip card-course__tooltip"><svg class="icon tooltip__icon">
+                              <use xlink:href="#attention"></use>
+                            </svg>
+                            <div class="tooltip__content">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam, laborum incidunt
+                                necessitatibus temporibus nesciunt labore vel sed modi nostrum quia sapiente natus
+                                velit, ipsam, minima iure. Eveniet, aperiam incidunt.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="text text-medium card-course__level">Для начинающих</p>
+                      </div>
+                      <div class="card-course__body">
+                        <div class="card-course__labels"> <span
+                            class="text card-course__label card-course__label--online">Онлайн</span><span
+                            class="text card-course__label card-course__label">Очно</span></div>
+                        <div class="card-course__time"> <svg class="icon">
+                            <use xlink:href="#clock"></use>
+                          </svg><span class="text-lg text-semibold">140 ч.</span></div>
+                      </div>
+                    </div>
+                    <picture class="card-course__img">
+                      <source media="(max-width: 767px)" srcset="assets/media/course-2--md.png" /><img
+                        src="assets/media/course-2.png" alt="" />
+                    </picture>
+                  </a>
+                </div>
+              </div>
+              <div class="pagination section-catalog__pagination">
+                <div class="pagination__list"> <a class="pagination__item-icon" href="#"><svg class="icon">
+                      <use xlink:href="#arrow--left"></use>
+                    </svg></a><a class="pagination__item is-active" href="#"> <span>01</span></a><a
+                    class="pagination__item" href="#"> <span>02</span></a><a class="pagination__item" href="#">
+                    <span>03</span></a><a class="pagination__item" href="#"> <span>04</span></a><a
+                    class="pagination__item" href="#"> <span>05</span></a><a class="pagination__item-icon" href="#"><svg
+                      class="icon">
+                      <use xlink:href="#arrow--right"></use>
+                    </svg></a></div><a class="button button--border pagination__button" href="#"><span
+                    class="button__text">Показать еще</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__inner">
+          <div class="footer__sitemap">
+            <div class="footer__menu">
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="about.html">О школе</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="teachers.html">Команда</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="articles.html">Статьи</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="contacts.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <div class="text-md text-raleway text-bold footer__menu-title">Курсы </div>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Долгосрочные
+                    курсы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Краткосрочные
+                    курсы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Супервизия</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Терапевтические группы</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Тренинги </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__menu footer__menu--lg">
+              <div class="text-md text-raleway text-bold footer__menu-title">Направления</div>
+              <ul class="footer__nav">
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Гештальт</a>
+                </li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Прикладной
+                    анализ поведения</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Экзистенциальный анализ</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">ACT
+                    терапия</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Транзактный
+                    анализ</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link"
+                    href="catalog.html">Нейропсихология</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Клиническая
+                    психология</a></li>
+                <li class="footer__nav-item"><a class="text-md link footer__nav-link" href="catalog.html">Психиатрия
+                    (медицина) </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__main">
+            <div class="footer__info">
+              <div class="text-xs footer__policy">Посещая данный сайт вы даете свое согласие на обработку персональных
+                данных <a class="link" href="#">Политика онфиденциальности</a></div>
+              <div class="text-xs footer__rights"><span>2022 ©</span><span>ООО "Высшая психологическая школа" </span>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contacts-item">
+                <div class="text-md text-raleway text-bold footer__contacts-title">Телефон</div><a
+                  class="link text-md footer__contacts-link footer__contacts-link--gray" href="tel:89850544664">+7
+                  (985)-054-4664</a><a class="link text-md footer__contacts-link footer__contacts-link--gray"
+                  href="tel:89958952167">+7 (995)-895-2167</a>
+              </div>
+              <div class="footer__contacts-item">
+                <div class="text-md text-raleway text-bold footer__contacts-title">Адрес</div><a
+                  class="link text-xs footer__contacts-link footer__contacts-link--gray"
+                  href="https://yandex.ru/maps/-/CCURuISL-A" target="_blank">127473 Москва, ул. Селезневская, д. 11-а
+                  к.2 <br> Администрация: офис 521 <br> Аудитория: офис 417</a>
+              </div>
+              <div class="footer__contacts-item footer__contacts-item--row">
+                <div class="text-md text-raleway text-bold footer__contacts-title">E-mail</div><a
+                  class="link text-md footer__contacts-link"
+                  href="mailto:info@psyschool.com.ru">info@psyschool.com.ru</a>
+              </div>
+              <div class="footer__contacts-item"> <a class="link text-md footer__contacts-link" href="#">Реквизиты</a>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__socials-header"> <span class="text-xs text-inter">при поддержке сервиса</span><img
+                  class="footer__socials-logo" src="assets/media/logo-w-label.svg" alt="Most психологи онлайн" /></div>
+              <div class="footer__socials-list"> <a class="footer__socials-item" href="#"><svg
+                    class="icon footer__socials-icon">
+                    <use xlink:href="#youtube"> </use>
+                  </svg></a><a class="footer__socials-item" href="#"><svg class="icon footer__socials-icon">
+                    <use xlink:href="#vk"> </use>
+                  </svg></a><a class="footer__socials-item" href="#"><svg class="icon footer__socials-icon">
+                    <use xlink:href="#telegram"> </use>
+                  </svg></a><a class="footer__socials-item" href="#"><svg class="icon footer__socials-icon">
+                    <use xlink:href="#whatsapp"> </use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal modal--callback fade" id="callback" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <h2 class="modal__title">Мы вам перезвоним </h2>
+            <div class="modal__form">
+              <form action="#"> <input class="input input--round modal__input jsInput" type="text" name="input"
+                  placeholder="Имя" /><input class="input input--round modal__input jsInput jsPhoneMask" type="text"
+                  name="input" placeholder="Телефон" /><button class="button button--border modal__button"
+                  type="button"><span class="button__text">Отправить</span></button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--callback fade" id="payment" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <h2 class="modal__title">Укажите </h2>
+            <div class="modal__form">
+              <form action="#"> <input class="input input--round modal__input jsInput" type="text" name="input"
+                  placeholder="Имя" /><input class="input input--round modal__input jsInput jsPhoneMask" type="text"
+                  name="input" placeholder="Телефон" /><button class="button button--border modal__button"
+                  type="button"><span class="button__text">Отправить</span></button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--course fade" id="callbackCourse" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <h2 class="modal__title">Мы ждём вас в нашем комьюнити </h2>
+            <div class="modal__form">
+              <form action="#"> <input class="input input--round modal__input jsInput" type="text" name="input"
+                  placeholder="Имя" /><input class="input input--round modal__input jsInput jsPhoneMask" type="text"
+                  name="input" placeholder="Телефон" /><input class="input input--round modal__input jsInput jsMailMask"
+                  type="text" name="input" placeholder="Почта" /><button class="button button--border modal__button"
+                  type="button"><span class="button__text">Записаться</span></button></form>
+            </div>
+          </div><img class="modal__img" src="assets/media/callback.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--ok fade" id="callbackOk" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <h2 class="modal__title">Спасибо </h2>
+            <p class="text-xl modal__subtitle">В скором времени с вами свяжется менеджер</p>
+          </div><img class="modal__img" src="assets/media/callback-ok.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--ok fade" id="callbackOk2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon modal__close-icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <h2 class="modal__title">Спасибо </h2>
+            <p class="text-xl modal__subtitle">В скором времени вам на почту придет письмо с подтверждение подписки</p>
+          </div><img class="modal__img" src="assets/media/callback-ok.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--cart fade" id="cart" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"><button class="modal-close" type="button" data-bs-dismiss="modal"
+            aria-label="Close"><svg class="icon">
+              <use xlink:href="#close"></use>
+            </svg></button>
+          <div class="modal__main">
+            <div class="modal-cart modal__cart">
+              <div class="modal-cart__header">
+                <h2 class="modal-cart__title">Корзина <span>3 товара</span></h2>
+              </div>
+              <div class="modal-cart__body">
+                <div class="card-product card-product--long" href="product.html">
+                  <picture class="card-product__img"> <img src="assets/media/product-1.jpg" alt="" /></picture>
+                  <div class="card-product__content">
+                    <div class="card-product__main"> <a class="card-product__title" href="product.html">
+                        <h4>Красивая сумка Красивая сумка Красивая сумка</h4><span>-30%</span>
+                      </a>
+                      <div class="card-product__price"> <strong>2 027 руб.</strong><span>4 919 руб.</span></div>
+                    </div>
+                    <div class="card-product__actions">
+                      <div class="card-product__settings"><a
+                          class="button button--md button--border card-product__settings-button"
+                          href="product.html"><span class="button__text">Подробнее</span></a><button
+                          class="card-product__delete" type="button"><svg class="icon">
+                            <use xlink:href="#trash"></use>
+                          </svg></button>
+                        <div class="input-number card-product__input"><button class="input-number__button jsNumberSub"
+                            type="button"><svg class="icon button__icon">
+                              <use xlink:href="#subtract"></use>
+                            </svg></button><input class="input-number__field jsNumberField" type="text"
+                            readonly="readonly" value="1" size="1" data-min="0" data-max="10" /><button
+                            class="input-number__button jsNumberAdd" type="button"><svg class="icon button__icon">
+                              <use xlink:href="#add"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-product card-product--long" href="product.html">
+                  <picture class="card-product__img"> <img src="assets/media/product-1.jpg" alt="" /></picture>
+                  <div class="card-product__content">
+                    <div class="card-product__main"> <a class="card-product__title" href="product.html">
+                        <h4>Красивая сумка </h4>
+                      </a>
+                      <div class="card-product__price"> <strong>12 027 руб.</strong><span>14 919 руб.</span></div>
+                    </div>
+                    <div class="card-product__actions">
+                      <div class="card-product__settings"><a
+                          class="button button--md button--border card-product__settings-button"
+                          href="product.html"><span class="button__text">Подробнее</span></a><button
+                          class="card-product__delete" type="button"><svg class="icon">
+                            <use xlink:href="#trash"></use>
+                          </svg></button>
+                        <div class="input-number card-product__input"><button class="input-number__button jsNumberSub"
+                            type="button"><svg class="icon button__icon">
+                              <use xlink:href="#subtract"></use>
+                            </svg></button><input class="input-number__field jsNumberField" type="text"
+                            readonly="readonly" value="1" size="1" data-min="0" data-max="10" /><button
+                            class="input-number__button jsNumberAdd" type="button"><svg class="icon button__icon">
+                              <use xlink:href="#add"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-product card-product--long" href="product.html">
+                  <picture class="card-product__img"> <img src="assets/media/product-1.jpg" alt="" /></picture>
+                  <div class="card-product__content">
+                    <div class="card-product__main"> <a class="card-product__title" href="product.html">
+                        <h4>Красивая сумка сумка</h4><span>-30%</span>
+                      </a>
+                      <div class="card-product__price"> <strong>100₽</strong></div>
+                    </div>
+                    <div class="card-product__actions">
+                      <div class="card-product__settings"><a
+                          class="button button--md button--border card-product__settings-button"
+                          href="product.html"><span class="button__text">Подробнее</span></a><button
+                          class="card-product__delete" type="button"><svg class="icon">
+                            <use xlink:href="#trash"></use>
+                          </svg></button>
+                        <div class="input-number card-product__input"><button class="input-number__button jsNumberSub"
+                            type="button"><svg class="icon button__icon">
+                              <use xlink:href="#subtract"></use>
+                            </svg></button><input class="input-number__field jsNumberField" type="text"
+                            readonly="readonly" value="1" size="1" data-min="0" data-max="10" /><button
+                            class="input-number__button jsNumberAdd" type="button"><svg class="icon button__icon">
+                              <use xlink:href="#add"></use>
+                            </svg></button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-cart__footer">
+                <div class="modal-cart__price"> <strong>8 570 руб.</strong><span>10 919 руб.</span></div><button
+                  class="modal-cart__reset" type="button"><span>Сбросить</span><svg class="icon">
+                    <use xlink:href="#close--round"></use>
+                  </svg></button><a class="button button--md modal-cart__button" href="#"><span
+                    class="button__text">Оплатить</span><svg class="icon button__icon">
+                    <use xlink:href="#cart-icon"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><svg style="display:none">
+      <symbol viewBox="0 0 32 32" id="arrow--left">
+        <path d="M14.4371 16L21.0371 22.6L19.1518 24.4854L10.6664 16L19.1518 7.51468L21.0371 9.40002L14.4371 16Z" />
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="arrow--right">
+        <path d="M17.5629 16L10.9629 9.39998L12.8482 7.51465L21.3336 16L12.8482 24.4853L10.9629 22.6L17.5629 16Z" />
+      </symbol>
+      <symbol viewBox="0 0 32 32" id="arrow--down">
+        <path
+          d="M16.001 17.5624L22.601 10.9624L24.4863 12.8477L16.001 21.3331L7.51566 12.8477L9.401 10.9624L16.001 17.5624Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="arrow-lg--down">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.54779 8.41987C3.84069 8.12697 4.31556 8.12697 4.60846 8.41987L11.1285 14.9399C11.6056 15.417 12.3907 15.417 12.8678 14.9399L19.3878 8.41987C19.6807 8.12697 20.1556 8.12697 20.4485 8.41987C20.7413 8.71276 20.7413 9.18763 20.4485 9.48053L13.9285 16.0005C12.8656 17.0634 11.1307 17.0634 10.0678 16.0005L3.54779 9.48053C3.2549 9.18763 3.2549 8.71276 3.54779 8.41987Z" />
+      </symbol>
+      <symbol viewBox="0 0 14 15" id="plus">
+        <path d="M5.81212 14.5V0.5H8.18788V14.5H5.81212ZM0 8.68788V6.31212H14V8.68788H0Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="plus--light">
+        <path d="M22 11.375V12.625H12.6667V22H11.3333V12.625H2V11.375H11.3333V2H12.6667V11.375H22Z" />
+      </symbol>
+      <symbol viewBox="0 0 25 25" id="tooltip">
+        <path
+          d="M13 2C7.48 2 3 6.48 3 12C3 17.52 7.48 22 13 22C18.52 22 23 17.52 23 12C23 6.48 18.52 2 13 2ZM14 19H12V17H14V19ZM16.07 11.25L15.17 12.17C14.45 12.9 14 13.5 14 15H12V14.5C12 13.4 12.45 12.4 13.17 11.67L14.41 10.41C14.78 10.05 15 9.55 15 9C15 7.9 14.1 7 13 7C11.9 7 11 7.9 11 9H9C9 6.79 10.79 5 13 5C15.21 5 17 6.79 17 9C17 9.88 16.64 10.68 16.07 11.25Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="telegram">
+        <path
+          d="M16.6324 7.06461L5.44147 11.0666C4.67774 11.3511 4.68216 11.7462 5.30135 11.9224L8.1745 12.7535L14.8221 8.86395C15.1365 8.68659 15.4237 8.782 15.1876 8.97633L9.8017 13.484H9.80043L9.8017 13.4846L9.6035 16.231C9.89385 16.231 10.022 16.1075 10.1848 15.9618L11.5804 14.7033L14.4832 16.6917C15.0184 16.9651 15.4028 16.8246 15.536 16.2322L17.4416 7.90399C17.6366 7.17875 17.143 6.85037 16.6324 7.06461V7.06461Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12 21.2162C17.09 21.2162 21.2162 17.09 21.2162 12C21.2162 6.91002 17.09 2.78378 12 2.78378C6.91002 2.78378 2.78378 6.91002 2.78378 12C2.78378 17.09 6.91002 21.2162 12 21.2162ZM12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="youtube">
+        <path
+          d="M20.0732 6.24458C19.9908 5.92175 19.7568 5.678 19.4893 5.60325C19.0158 5.47 16.7083 5.16667 11.8333 5.16667C6.95833 5.16667 4.653 5.47 4.17525 5.60325C3.91092 5.67692 3.67692 5.92067 3.5935 6.24458C3.47542 6.70392 3.16667 8.629 3.16667 11.6667C3.16667 14.7043 3.47542 16.6283 3.5935 17.0898C3.67583 17.4116 3.90983 17.6553 4.17633 17.729C4.653 17.8633 6.95833 18.1667 11.8333 18.1667C16.7083 18.1667 19.0148 17.8633 19.4914 17.7301C19.7558 17.6564 19.9898 17.4127 20.0732 17.0887C20.1913 16.6294 20.5 14.7 20.5 11.6667C20.5 8.63333 20.1913 6.705 20.0732 6.24458ZM22.1716 5.70617C22.6667 7.63667 22.6667 11.6667 22.6667 11.6667C22.6667 11.6667 22.6667 15.6967 22.1716 17.6272C21.8964 18.6943 21.0915 19.5338 20.0721 19.8177C18.2207 20.3333 11.8333 20.3333 11.8333 20.3333C11.8333 20.3333 5.44925 20.3333 3.59458 19.8177C2.57083 19.5295 1.767 18.691 1.49508 17.6272C1 15.6967 1 11.6667 1 11.6667C1 11.6667 1 7.63667 1.49508 5.70617C1.77025 4.63908 2.57517 3.7995 3.59458 3.51567C5.44925 3 11.8333 3 11.8333 3C11.8333 3 18.2207 3 20.0721 3.51567C21.0958 3.80383 21.8997 4.64233 22.1716 5.70617ZM9.66667 15.4583V7.875L16.1667 11.6667L9.66667 15.4583Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="vk">
+        <path
+          d="M15.5903 1C17.7733 1 18.823 1.20271 19.9137 1.78602C20.9028 2.31499 21.685 3.0972 22.214 4.08629C22.7973 5.17697 23 6.22671 23 8.4097V15.5903C23 17.7733 22.7973 18.823 22.214 19.9137C21.685 20.9028 20.9028 21.685 19.9137 22.214C18.823 22.7973 17.7733 23 15.5903 23H8.4097C6.22671 23 5.17697 22.7973 4.08629 22.214C3.0972 21.685 2.31499 20.9028 1.78602 19.9137C1.20271 18.823 1 17.7733 1 15.5903V8.4097C1 6.22671 1.20271 5.17697 1.78602 4.08629C2.31499 3.0972 3.0972 2.31499 4.08629 1.78602C5.17697 1.20271 6.22671 1 8.4097 1H15.5903ZM15.5903 3H8.4097C6.52864 3 5.79082 3.14248 5.02948 3.54964C4.38894 3.89221 3.89221 4.38894 3.54964 5.02948C3.14248 5.79082 3 6.52864 3 8.4097V15.5903C3 17.4714 3.14248 18.2092 3.54964 18.9705C3.89221 19.6111 4.38894 20.1078 5.02948 20.4504C5.79082 20.8575 6.52864 21 8.4097 21H15.5903C17.4714 21 18.2092 20.8575 18.9705 20.4504C19.6111 20.1078 20.1078 19.6111 20.4504 18.9705C20.8575 18.2092 21 17.4714 21 15.5903V8.4097C21 6.52864 20.8575 5.79082 20.4504 5.02948C20.1078 4.38894 19.6111 3.89221 18.9705 3.54964C18.2092 3.14248 17.4714 3 15.5903 3V3Z" />
+        <path
+          d="M12.7559 16.33C8.24345 16.33 5.50571 13.2025 5.39844 8H7.6839C7.75515 11.8216 9.49385 13.437 10.8267 13.77V8H13.0169V11.3C14.3025 11.1575 15.6481 9.6555 16.1004 8H18.2562C17.9112 10.0357 16.4463 11.5312 15.4112 12.15C16.4471 12.6503 18.1137 13.9613 18.7565 16.33H16.387C15.8867 14.7466 14.6611 13.5265 13.0177 13.36V16.33H12.7559Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="whatsapp">
+        <path
+          d="M8.69288 6.86374C8.88785 6.87172 9.10355 6.88086 9.3085 7.33642C9.44856 7.64786 9.68423 8.22846 9.87204 8.69116C10.0104 9.03211 10.1228 9.30904 10.1519 9.36708C10.2203 9.50389 10.2658 9.66364 10.1746 9.84632C10.161 9.87363 10.1484 9.8994 10.1363 9.92402C10.0678 10.0639 10.0174 10.1667 9.90134 10.3025C9.85586 10.3556 9.80883 10.4128 9.7618 10.47C9.66737 10.5849 9.57293 10.6998 9.49092 10.7816C9.3537 10.918 9.21117 11.0662 9.37076 11.3398C9.5304 11.6137 10.0795 12.5091 10.8927 13.2342C11.7664 14.0132 12.5254 14.3427 12.9108 14.51C12.9865 14.5429 13.0478 14.5695 13.0927 14.592C13.3663 14.7288 13.5259 14.706 13.6855 14.5232C13.8451 14.3407 14.3691 13.7247 14.5515 13.4511C14.7339 13.1772 14.9163 13.2228 15.1671 13.314C15.4179 13.4052 16.7629 14.0671 17.0365 14.2039C17.0898 14.2306 17.1397 14.2547 17.1859 14.277C17.3769 14.3691 17.5058 14.4314 17.5609 14.5232C17.6293 14.6376 17.6293 15.1851 17.4013 15.8238C17.1733 16.4626 16.0563 17.0787 15.5547 17.1243C15.5064 17.1287 15.4585 17.1343 15.4091 17.1401C14.9456 17.1946 14.3605 17.2634 12.2719 16.4399C9.70193 15.4264 8.00741 12.9149 7.65733 12.396C7.62862 12.3535 7.60896 12.3243 7.59859 12.3105L7.59554 12.3064C7.44803 12.1093 6.48152 10.8176 6.48152 9.48111C6.48152 8.22125 7.1008 7.56084 7.38573 7.25699C7.4052 7.23623 7.42311 7.21713 7.43916 7.19962C7.68978 6.92585 7.98622 6.85734 8.16859 6.85734C8.17859 6.85734 8.18859 6.85734 8.19859 6.85734C8.37082 6.85732 8.54219 6.85729 8.69288 6.86374Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M2.56827 17.3687C1.59639 15.7121 1.08835 13.8345 1.08835 11.8908C1.08835 5.86065 6.01406 0.957031 12.0442 0.957031C14.9819 0.957031 17.7209 2.10563 19.7972 4.15984C21.8514 6.23615 23 8.9751 23 11.9129C23 17.943 18.0743 22.8466 12.0442 22.8466C10.2108 22.8466 8.3996 22.4048 6.80924 21.5213L1 23.0454L2.56827 17.3687ZM4.33534 16.7502L4.55622 17.0815L3.62851 20.439L7.0743 19.5333L7.40562 19.7321C8.79719 20.5715 10.4096 21.0133 12.0442 21.0133C17.0582 21.0133 21.1446 16.9269 21.1446 11.9129C21.1446 9.48314 20.1948 7.18595 18.4719 5.46306C16.7711 3.76225 14.4739 2.81245 12.0442 2.81245C7.03012 2.81245 2.94378 6.87671 2.94378 11.9129C2.94378 13.6137 3.42972 15.2924 4.33534 16.7502Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="facebook">
+        <path
+          d="M15.5903 1C17.7733 1 18.823 1.20271 19.9137 1.78602C20.9028 2.31499 21.685 3.0972 22.214 4.08629C22.7973 5.17697 23 6.22671 23 8.4097V15.5903C23 17.7733 22.7973 18.823 22.214 19.9137C21.685 20.9028 20.9028 21.685 19.9137 22.214C18.823 22.7973 17.7733 23 15.5903 23H8.4097C6.22671 23 5.17697 22.7973 4.08629 22.214C3.0972 21.685 2.31499 20.9028 1.78602 19.9137C1.20271 18.823 1 17.7733 1 15.5903V8.4097C1 6.22671 1.20271 5.17697 1.78602 4.08629C2.31499 3.0972 3.0972 2.31499 4.08629 1.78602C5.17697 1.20271 6.22671 1 8.4097 1H15.5903ZM15.5903 3H8.4097C6.52864 3 5.79082 3.14248 5.02948 3.54964C4.38894 3.89221 3.89221 4.38894 3.54964 5.02948C3.14248 5.79082 3 6.52864 3 8.4097V15.5903C3 17.4714 3.14248 18.2092 3.54964 18.9705C3.89221 19.6111 4.38894 20.1078 5.02948 20.4504C5.79082 20.8575 6.52864 21 8.4097 21H15.5903C17.4714 21 18.2092 20.8575 18.9705 20.4504C19.6111 20.1078 20.1078 19.6111 20.4504 18.9705C20.8575 18.2092 21 17.4714 21 15.5903V8.4097C21 6.52864 20.8575 5.79082 20.4504 5.02948C20.1078 4.38894 19.6111 3.89221 18.9705 3.54964C18.2092 3.14248 17.4714 3 15.5903 3V3Z" />
+        <path
+          d="M12.8889 13.4012H15.1111L16 11.2927H12.8889V9.57961C12.8889 8.69736 12.8889 7.86649 14.6667 7.86649H16V6.18631C15.7102 6.14948 14.616 6.18631 13.4604 6.18631C13.2739 5.99976 10.6667 6.28785 10.6667 8.89437V11.2927H8V13.4012H10.6667V21.9998H12.8889V13.4012Z" />
+      </symbol>
+      <symbol viewBox="0 0 45 45" id="play">
+        <circle cx="22.5" cy="22.5" r="22.5" fill="white" />
+        <path
+          d="M29.9516 21.2307C31.3495 22.0171 31.3495 23.9829 29.9516 24.7693L21.1452 29.7232C19.7473 30.5096 18 29.5267 18 27.954L18 18.046C18 16.4733 19.7473 15.4904 21.1452 16.2768L29.9516 21.2307Z"
+          fill="#3AB3FE" />
+      </symbol>
+      <symbol viewBox="0 0 48 48" id="play--simple">
+        <path
+          d="M40.5 19.6699C43.8333 21.5944 43.8333 26.4056 40.5 28.3301L19.5 40.4545C16.1667 42.379 12 39.9734 12 36.1244L12 11.8756C12 8.02664 16.1667 5.62102 19.5 7.54552L40.5 19.6699Z"
+          fill="white" />
+      </symbol>
+      <symbol viewBox="0 0 41 41" id="attention">
+        <path
+          d="M20.4974 37.5832C11.0623 37.5832 3.41406 29.935 3.41406 20.4998C3.41406 11.0647 11.0623 3.4165 20.4974 3.4165C29.9325 3.4165 37.5807 11.0647 37.5807 20.4998C37.5807 29.935 29.9325 37.5832 20.4974 37.5832ZM20.4974 34.1665C24.122 34.1665 27.5982 32.7266 30.1612 30.1636C32.7242 27.6006 34.1641 24.1245 34.1641 20.4998C34.1641 16.8752 32.7242 13.399 30.1612 10.836C27.5982 8.27305 24.122 6.83317 20.4974 6.83317C16.8728 6.83317 13.3966 8.27305 10.8336 10.836C8.27061 13.399 6.83073 16.8752 6.83073 20.4998C6.83073 24.1245 8.27061 27.6006 10.8336 30.1636C13.3966 32.7266 16.8728 34.1665 20.4974 34.1665V34.1665ZM18.7891 11.9582H22.2057V15.3748H18.7891V11.9582ZM18.7891 18.7915H22.2057V29.0415H18.7891V18.7915Z" />
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="login">
+        <path
+          d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM5.07 16.28C5.5 15.38 8.12 14.5 10 14.5C11.88 14.5 14.51 15.38 14.93 16.28C13.57 17.36 11.86 18 10 18C8.14 18 6.43 17.36 5.07 16.28ZM16.36 14.83C14.93 13.09 11.46 12.5 10 12.5C8.54 12.5 5.07 13.09 3.64 14.83C2.62 13.49 2 11.82 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 11.82 17.38 13.49 16.36 14.83V14.83ZM10 4C8.06 4 6.5 5.56 6.5 7.5C6.5 9.44 8.06 11 10 11C11.94 11 13.5 9.44 13.5 7.5C13.5 5.56 11.94 4 10 4ZM10 9C9.17 9 8.5 8.33 8.5 7.5C8.5 6.67 9.17 6 10 6C10.83 6 11.5 6.67 11.5 7.5C11.5 8.33 10.83 9 10 9Z" />
+      </symbol>
+      <symbol viewBox="0 0 29 29" id="question-phone">
+        <path
+          d="M14.5 29C22.5081 29 29 22.5081 29 14.5C29 6.49187 22.5081 0 14.5 0C6.49187 0 0 6.49187 0 14.5C0 22.5081 6.49187 29 14.5 29Z"
+          fill="#00EBBA" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M11.0772 8.03169C10.7863 8.09479 10.7303 8.13856 9.96994 8.89686C9.30642 9.55861 9.2551 9.61583 9.17726 9.78044C9.049 10.0517 9.01698 10.1991 9.0031 10.5826C8.98907 10.97 9.0208 11.2259 9.13814 11.6713C9.84504 14.3552 13.0136 17.8849 16.0463 19.367C16.9456 19.8065 17.6247 19.9977 18.2943 20C18.7042 20.0013 18.9115 19.96 19.1955 19.8203C19.3784 19.7303 19.4265 19.6876 20.0868 19.03C20.8262 18.2935 20.8704 18.2378 20.9633 17.9257C21.0122 17.7614 21.0122 17.4532 20.9633 17.2889C20.8791 17.0057 20.8447 16.9646 19.9096 16.0268C19.416 15.5318 18.9487 15.0817 18.871 15.0266C18.4039 14.6951 17.8043 14.7411 17.4136 15.1383C17.2954 15.2585 17.2499 15.3289 17.1683 15.518C17.1131 15.6456 17.0394 15.7888 17.0044 15.836C16.7795 16.1399 16.3451 16.3334 15.9757 16.2943C15.4249 16.236 14.6031 15.7398 13.907 15.0452C13.0643 14.2044 12.5672 13.2369 12.6884 12.6733C12.7449 12.4109 12.9296 12.1363 13.1482 11.99C13.2015 11.9544 13.314 11.8959 13.3981 11.8602C13.6426 11.7563 13.7028 11.7223 13.8162 11.6234C14.2079 11.2823 14.2937 10.6438 14.0086 10.1911C13.9246 10.0579 12.3015 8.42052 12.1035 8.26931C11.9456 8.14875 11.7384 8.05591 11.5519 8.02211C11.3752 7.9901 11.258 7.99247 11.0772 8.03169Z"
+          fill="white" />
+      </symbol>
+      <symbol viewBox="0 0 29 15" id="more">
+        <rect y="1" width="28.7023" height="13.1552" rx="6.57761" fill="#D4F0FF" />
+        <circle cx="8.96577" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+        <circle cx="8.96577" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+        <circle cx="14.9501" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+        <circle cx="14.9501" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+        <circle cx="20.9267" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+        <circle cx="20.9267" cy="7.57758" r="1.79389" fill="#3AB3FE" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="clock">
+        <path
+          d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM13 12H16C16.5523 12 17 12.4477 17 13V13C17 13.5523 16.5523 14 16 14H11V8C11 7.44772 11.4477 7 12 7V7C12.5523 7 13 7.44772 13 8V12Z" />
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="checkbox">
+        <path d="M8.28571 15L4 10.7486L5.36286 9.42857L8.28571 12.3L14.6371 6L16 7.35429L8.28571 15Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="filter">
+        <path
+          d="M22 6H19.0714C18.7143 4.275 17.2857 3 15.5714 3C13.8571 3 12.4286 4.275 12.0714 6H2V7.5H12.0714C12.4286 9.225 13.8571 10.5 15.5714 10.5C17.2857 10.5 18.7143 9.225 19.0714 7.5H22V6ZM15.5714 9C14.3571 9 13.4286 8.025 13.4286 6.75C13.4286 5.475 14.3571 4.5 15.5714 4.5C16.7857 4.5 17.7143 5.475 17.7143 6.75C17.7143 8.025 16.7857 9 15.5714 9ZM2 18H4.92857C5.28571 19.725 6.71429 21 8.42857 21C10.1429 21 11.5714 19.725 11.9286 18H22V16.5H11.9286C11.5714 14.775 10.1429 13.5 8.42857 13.5C6.71429 13.5 5.28571 14.775 4.92857 16.5H2V18ZM8.42857 15C9.64286 15 10.5714 15.975 10.5714 17.25C10.5714 18.525 9.64286 19.5 8.42857 19.5C7.21429 19.5 6.28571 18.525 6.28571 17.25C6.28571 15.975 7.21429 15 8.42857 15Z" />
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="close">
+        <path
+          d="M17.6551 16.7713L16.7712 17.6551L10.1716 11.0555L3.54243 17.6846L2.59962 16.7418L9.22874 10.1127L2.62908 3.51301L3.51296 2.62913L10.1126 9.22879L16.7418 2.59966L17.6846 3.54247L11.0554 10.1716L17.6551 16.7713Z" />
+      </symbol>
+      <symbol viewBox="0 0 45 45" id="attention--2">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M21.7057 4.06722C20.6608 4.26478 19.7808 4.73357 19.0563 5.47856C18.6931 5.85205 1.52423 33.2106 0.587555 34.9087C-0.952853 37.7008 0.679009 41.2304 3.81215 41.8836C4.55639 42.0388 40.4438 42.0388 41.1881 41.8836C42.5972 41.5899 43.8715 40.5988 44.4845 39.32C45.1478 37.9363 45.1715 36.5006 44.5528 35.1927C44.0642 34.1598 26.3882 5.93494 25.9442 5.47856C24.8623 4.36684 23.1451 3.79489 21.7057 4.06722ZM23.1455 7.33328C23.364 7.43355 23.6144 7.60014 23.7019 7.70339C23.7895 7.80664 27.9004 14.3684 32.8373 22.285L41.8135 36.6789V37.2342C41.8135 37.6841 41.7628 37.8559 41.546 38.14C40.9851 38.8754 42.6465 38.8164 22.5001 38.8164C2.35377 38.8164 4.01512 38.8754 3.45418 38.14C3.23752 37.856 3.18668 37.6841 3.18668 37.2347V36.68L12.1629 22.2855C17.0998 14.3687 21.2107 7.80664 21.2983 7.70339C21.5029 7.46215 22.1799 7.15091 22.5001 7.15091C22.6366 7.15091 22.9271 7.23291 23.1455 7.33328ZM21.9169 15.9325C20.7395 16.2996 20.3585 17.3092 20.5302 19.606C20.5793 20.2612 20.7282 22.375 20.8613 24.3033C21.1286 28.1773 21.2435 28.832 21.7273 29.2389C22.0856 29.5404 22.6194 29.5622 23.0604 29.2932C23.367 29.1063 23.5862 28.6348 23.7332 27.8461C23.8318 27.3172 24.4057 20.7356 24.4595 19.5181C24.5537 17.3811 24.1276 16.1403 23.2119 15.886C22.7415 15.7554 22.4514 15.7658 21.9169 15.9325ZM21.8194 31.9731C20.5413 32.485 20.1718 34.1245 21.0971 35.1784C21.6682 35.8291 22.9707 35.9319 23.6632 35.3811C24.8529 34.4348 24.7048 32.7387 23.3729 32.0558C22.9788 31.8537 22.2186 31.8133 21.8194 31.9731Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="search">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.84844 11.0004C3.84844 7.05155 7.0496 3.85039 10.9984 3.85039C14.9473 3.85039 18.1484 7.05155 18.1484 11.0004C18.1484 14.9492 14.9473 18.1504 10.9984 18.1504C7.0496 18.1504 3.84844 14.9492 3.84844 11.0004ZM10.9984 2.15039C6.11072 2.15039 2.14844 6.11267 2.14844 11.0004C2.14844 15.8881 6.11072 19.8504 10.9984 19.8504C13.1362 19.8504 15.0969 19.0924 16.6265 17.8306L19.3974 20.6014C19.7293 20.9334 20.2675 20.9334 20.5995 20.6014C20.9314 20.2695 20.9314 19.7313 20.5995 19.3994L17.8286 16.6285C19.0905 15.0989 19.8484 13.1382 19.8484 11.0004C19.8484 6.11267 15.8862 2.15039 10.9984 2.15039Z">
+        </path>
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="search--decor">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3ZM1 11C1 5.47715 5.47715 1 11 1C16.5228 1 21 5.47715 21 11C21 16.5228 16.5228 21 11 21C5.47715 21 1 16.5228 1 11Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M20.3524 17.7198C19.5163 17.7137 18.7416 18.0451 18.2642 18.7079C17.7873 19.3699 17.7167 20.2105 17.9786 21.0034L17.9789 21.0043C18.2931 21.953 18.9345 22.8458 19.9803 22.9859C21.0259 23.1261 21.8793 22.4338 22.4311 21.6031L22.4312 21.603C22.9611 20.8051 23.2216 19.8117 22.7509 18.9327C22.2806 18.0545 21.3108 17.7208 20.3524 17.7198ZM19.8775 20.3758C20.0345 20.8494 20.1982 20.9716 20.2466 20.9991C20.3003 20.9853 20.4899 20.9108 20.7651 20.4966M19.8775 20.3758C19.7796 20.079 19.849 19.9297 19.8871 19.8768C19.9239 19.8257 20.0371 19.7171 20.3394 19.7198L20.3394 19.7198H20.3481C20.6247 19.7198 20.798 19.7676 20.8925 19.8113C20.9382 19.8325 20.9629 19.8514 20.9744 19.8618C20.985 19.8713 20.9876 19.8764 20.9878 19.8769L20.9878 19.8769L20.9878 19.8769C20.9881 19.8774 20.9909 19.8824 20.993 19.8967C20.9953 19.9122 20.9974 19.9433 20.9897 19.9932C20.9738 20.0963 20.9176 20.2669 20.7652 20.4965" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="more--simple">
+        <path
+          d="M5.51562 10.5C4.41562 10.5 3.51562 11.4 3.51562 12.5C3.51562 13.6 4.41562 14.5 5.51562 14.5C6.61563 14.5 7.51562 13.6 7.51562 12.5C7.51562 11.4 6.61563 10.5 5.51562 10.5Z" />
+        <path
+          d="M19.5156 10.5C18.4156 10.5 17.5156 11.4 17.5156 12.5C17.5156 13.6 18.4156 14.5 19.5156 14.5C20.6156 14.5 21.5156 13.6 21.5156 12.5C21.5156 11.4 20.6156 10.5 19.5156 10.5Z" />
+        <path
+          d="M12.5156 10.5C11.4156 10.5 10.5156 11.4 10.5156 12.5C10.5156 13.6 11.4156 14.5 12.5156 14.5C13.6156 14.5 14.5156 13.6 14.5156 12.5C14.5156 11.4 13.6156 10.5 12.5156 10.5Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="close--round">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.10156 12.0001C1.10156 6.00304 6.00451 1.1001 12.0016 1.1001C17.9986 1.1001 22.9016 6.00304 22.9016 12.0001C22.9016 17.9972 17.9986 22.9001 12.0016 22.9001C6.00451 22.9001 1.10156 17.9972 1.10156 12.0001ZM12.0016 2.9001C6.99862 2.9001 2.90156 6.99715 2.90156 12.0001C2.90156 17.003 6.99862 21.1001 12.0016 21.1001C17.0045 21.1001 21.1016 17.003 21.1016 12.0001C21.1016 6.99715 17.0045 2.9001 12.0016 2.9001Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M15.4698 8.53362C15.8213 8.8851 15.8213 9.45494 15.4698 9.80642L9.80983 15.4664C9.45836 15.8179 8.88851 15.8179 8.53704 15.4664C8.18557 15.1149 8.18557 14.5451 8.53704 14.1936L14.197 8.53362C14.5485 8.18215 15.1184 8.18215 15.4698 8.53362Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.53704 8.53362C8.88851 8.18215 9.45836 8.18215 9.80983 8.53362L15.4698 14.1936C15.8213 14.5451 15.8213 15.1149 15.4698 15.4664C15.1184 15.8179 14.5485 15.8179 14.197 15.4664L8.53704 9.80642C8.18557 9.45494 8.18557 8.8851 8.53704 8.53362Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="cart-icon">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M1.10156 2.0001C1.10156 1.50304 1.50451 1.1001 2.00156 1.1001H3.74157C4.95966 1.1001 5.97962 1.8929 6.34445 2.97009H18.7316C20.9212 2.97009 22.5971 4.76077 22.4392 6.94499L21.8992 14.4447L21.8989 14.4491C21.7532 16.3435 20.1064 17.8901 18.1916 17.8901H7.54156C5.37759 17.8901 3.67009 16.0423 3.85476 13.8843C3.8548 13.8839 3.85473 13.8847 3.85476 13.8843L4.68467 3.92536C4.73063 3.37904 4.29347 2.9001 3.74157 2.9001H2.00156C1.50451 2.9001 1.10156 2.49715 1.10156 2.0001ZM6.42052 4.77009L5.64845 14.0348L5.64826 14.0371C5.55366 15.1385 6.42592 16.0901 7.54156 16.0901H18.1916C19.1561 16.0901 20.0287 15.2778 20.1041 14.313C20.1041 14.3124 20.1042 14.3117 20.1042 14.3111L20.6439 6.81547C20.726 5.67969 19.8819 4.77009 18.7316 4.77009H6.42052Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M16.2516 20.4001C16.0583 20.4001 15.9016 20.5568 15.9016 20.7501C15.9016 20.9434 16.0583 21.1001 16.2516 21.1001C16.4449 21.1001 16.6016 20.9434 16.6016 20.7501C16.6016 20.5568 16.4449 20.4001 16.2516 20.4001ZM14.1016 20.7501C14.1016 19.5627 15.0641 18.6001 16.2516 18.6001C17.439 18.6001 18.4016 19.5627 18.4016 20.7501C18.4016 21.9375 17.439 22.9001 16.2516 22.9001C15.0641 22.9001 14.1016 21.9375 14.1016 20.7501Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.25156 20.4001C8.05826 20.4001 7.90156 20.5568 7.90156 20.7501C7.90156 20.9434 8.05826 21.1001 8.25156 21.1001C8.44486 21.1001 8.60156 20.9434 8.60156 20.7501C8.60156 20.5568 8.44486 20.4001 8.25156 20.4001ZM6.10156 20.7501C6.10156 19.5627 7.06415 18.6001 8.25156 18.6001C9.43898 18.6001 10.4016 19.5627 10.4016 20.7501C10.4016 21.9375 9.43898 22.9001 8.25156 22.9001C7.06415 22.9001 6.10156 21.9375 6.10156 20.7501Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.10156 8.0001C8.10156 7.50304 8.50451 7.1001 9.00156 7.1001H21.0016C21.4986 7.1001 21.9016 7.50304 21.9016 8.0001C21.9016 8.49715 21.4986 8.9001 21.0016 8.9001H9.00156C8.50451 8.9001 8.10156 8.49715 8.10156 8.0001Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="bag">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.3371 1.46894C9.63039 1.76143 9.63105 2.2363 9.33856 2.5296L5.71856 6.1596C5.42607 6.4529 4.9512 6.45355 4.6579 6.16106C4.3646 5.86857 4.36395 5.3937 4.65644 5.1004L8.27644 1.4704C8.56893 1.1771 9.0438 1.17645 9.3371 1.46894Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M14.6579 1.46894C14.9512 1.17645 15.4261 1.1771 15.7186 1.4704L19.3386 5.1004C19.631 5.3937 19.6304 5.86857 19.3371 6.16106C19.0438 6.45355 18.5689 6.4529 18.2764 6.1596L14.6564 2.5296C14.3639 2.2363 14.3646 1.76143 14.6579 1.46894Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M3.06612 6.77949C2.95982 6.85068 2.75 7.0482 2.75 7.8501C2.75 8.84947 2.98342 8.98364 3.02242 9.00607L3.02325 9.00654C3.08165 9.0402 3.19013 9.07586 3.40918 9.09196C3.5762 9.10423 3.74829 9.10294 3.96204 9.10134C4.04163 9.10074 4.12698 9.1001 4.22 9.1001H19.78C19.873 9.1001 19.9584 9.10074 20.038 9.10134C20.2517 9.10294 20.4238 9.10423 20.5908 9.09196C20.8099 9.07586 20.9183 9.0402 20.9767 9.00654L20.9776 9.00607C21.0166 8.98364 21.25 8.84947 21.25 7.8501C21.25 7.0482 21.0402 6.85068 20.9339 6.77949C20.7469 6.65425 20.418 6.6001 19.78 6.6001H4.22C3.58197 6.6001 3.2531 6.65425 3.06612 6.77949ZM2.23138 5.53321C2.8469 5.12095 3.62803 5.1001 4.22 5.1001H19.78C20.372 5.1001 21.1531 5.12095 21.7686 5.53321C22.4648 5.99951 22.75 6.80199 22.75 7.8501C22.75 8.99341 22.4918 9.86464 21.7257 10.3062C21.3829 10.5037 21.0133 10.565 20.7007 10.5879C20.4675 10.6051 20.2081 10.603 19.9768 10.6012C19.9083 10.6006 19.8422 10.6001 19.78 10.6001H4.22C4.15779 10.6001 4.09171 10.6006 4.02316 10.6012C3.79185 10.603 3.5325 10.6051 3.29925 10.5879C2.98674 10.565 2.6171 10.5037 2.27425 10.3062C1.50815 9.86464 1.25 8.99341 1.25 7.8501C1.25 6.80199 1.53518 5.99951 2.23138 5.53321Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.75781 13.25C10.172 13.25 10.5078 13.5858 10.5078 14V17.55C10.5078 17.9642 10.172 18.3 9.75781 18.3C9.3436 18.3 9.00781 17.9642 9.00781 17.55V14C9.00781 13.5858 9.3436 13.25 9.75781 13.25Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M14.3594 13.25C14.7736 13.25 15.1094 13.5858 15.1094 14V17.55C15.1094 17.9642 14.7736 18.3 14.3594 18.3C13.9452 18.3 13.6094 17.9642 13.6094 17.55V14C13.6094 13.5858 13.9452 13.25 14.3594 13.25Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M20.6414 9.26356C21.0482 9.34158 21.3147 9.7346 21.2367 10.1414L19.5567 18.9012C19.5567 18.9013 19.5567 18.9011 19.5567 18.9012C19.3799 19.8248 19.1487 20.8487 18.4289 21.6029C17.677 22.3909 16.5392 22.7501 14.8901 22.7501H8.86011C7.30829 22.7501 6.17693 22.3625 5.39894 21.5746C4.64211 20.8082 4.33744 19.7766 4.17011 18.7622L2.75991 10.1209C2.69319 9.71213 2.97051 9.32664 3.37932 9.25993C3.78812 9.19322 4.17361 9.47053 4.24032 9.87934L5.65011 18.5181C5.65015 18.5183 5.65008 18.5179 5.65011 18.5181C5.8028 19.4433 6.04322 20.0922 6.46628 20.5207C6.8683 20.9278 7.55194 21.2501 8.86011 21.2501H14.8901C16.3511 21.2501 16.9983 20.9294 17.3438 20.5673C17.7214 20.1716 17.9004 19.5754 18.0835 18.6191L19.7635 9.85888C19.8416 9.45208 20.2346 9.18555 20.6414 9.26356Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="add">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4 12C4 10.8954 4.89543 10 6 10H18C19.1046 10 20 10.8954 20 12C20 13.1046 19.1046 14 18 14H6C4.89543 14 4 13.1046 4 12Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M12 4C13.1046 4 14 4.89543 14 6V18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18V6C10 4.89543 10.8954 4 12 4Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="subtract">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4.5 12C4.5 11.1716 5.17157 10.5 6 10.5H18C18.8284 10.5 19.5 11.1716 19.5 12C19.5 12.8284 18.8284 13.5 18 13.5H6C5.17157 13.5 4.5 12.8284 4.5 12Z" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="trash">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M4.96578 5.03367C6.97033 4.83122 8.97512 4.72998 10.9801 4.72998C14.3454 4.72998 17.7201 4.90127 21.074 5.23364C21.4862 5.27448 21.7872 5.64175 21.7464 6.05394C21.7055 6.46614 21.3383 6.76717 20.9261 6.72632C17.62 6.39869 14.2947 6.22998 10.9801 6.22998C9.02535 6.22998 7.07051 6.3287 5.11543 6.52618L5.11323 6.5264L3.07323 6.7264C2.661 6.76682 2.29405 6.4654 2.25363 6.05316C2.21322 5.64092 2.51464 5.27397 2.92688 5.23356L4.96578 5.03367Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.4597 3.78456L9.23976 5.09421C9.17116 5.50271 8.7844 5.77824 8.3759 5.70964C7.96741 5.64104 7.69187 5.25428 7.76048 4.84578L7.98048 3.53579C7.98432 3.51297 7.98828 3.48908 7.99228 3.46487C8.06114 3.04899 8.16216 2.43887 8.56885 1.97769C9.04291 1.44012 9.76621 1.25 10.6901 1.25H13.3101C14.2453 1.25 14.9678 1.4554 15.4391 1.99845C15.8463 2.46776 15.9448 3.08006 16.0106 3.48891C16.0138 3.5088 16.0169 3.52822 16.02 3.54711L16.2396 4.84486C16.3087 5.25326 16.0337 5.64037 15.6253 5.70949C15.2169 5.7786 14.8297 5.50355 14.7606 5.09514L14.5399 3.79069C14.4562 3.27767 14.4033 3.09352 14.3062 2.98155C14.2524 2.9196 14.065 2.75 13.3101 2.75H10.6901C9.92402 2.75 9.74232 2.91488 9.69389 2.96981C9.60177 3.07427 9.54978 3.24976 9.4597 3.78456Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M18.8968 8.39172C19.3101 8.4184 19.6236 8.77512 19.5969 9.18847L18.9466 19.2626L18.9453 19.2816C18.919 19.6578 18.89 20.0716 18.8125 20.4565C18.7321 20.8557 18.5904 21.277 18.3033 21.6508C17.7021 22.4335 16.679 22.7502 15.2085 22.7502H8.78846C7.3179 22.7502 6.29484 22.4335 5.69367 21.6508C5.40656 21.277 5.26487 20.8557 5.18448 20.4565C5.10695 20.0716 5.07798 19.6578 5.05163 19.2816L5.05001 19.2585L4.40002 9.18847C4.37334 8.77512 4.6868 8.4184 5.10015 8.39172C5.51351 8.36504 5.87023 8.6785 5.89691 9.09185L6.54663 19.1577C6.54668 19.1584 6.54673 19.1591 6.54677 19.1598C6.575 19.5625 6.59888 19.882 6.65495 20.1604C6.70956 20.4315 6.78537 20.6096 6.88326 20.7371C7.05209 20.9569 7.46903 21.2502 8.78846 21.2502H15.2085C16.5279 21.2502 16.9448 20.9569 17.1137 20.7371C17.2116 20.6096 17.2874 20.4315 17.342 20.1604C17.398 19.882 17.4219 19.5625 17.4502 19.1598C17.4502 19.1591 17.4503 19.1584 17.4503 19.1577L18.1 9.09185C18.1267 8.6785 18.4834 8.36504 18.8968 8.39172Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M9.57812 16.5C9.57812 16.0858 9.91391 15.75 10.3281 15.75H13.6581C14.0723 15.75 14.4081 16.0858 14.4081 16.5C14.4081 16.9142 14.0723 17.25 13.6581 17.25H10.3281C9.91391 17.25 9.57812 16.9142 9.57812 16.5Z" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.75 12.5C8.75 12.0858 9.08579 11.75 9.5 11.75H14.5C14.9142 11.75 15.25 12.0858 15.25 12.5C15.25 12.9142 14.9142 13.25 14.5 13.25H9.5C9.08579 13.25 8.75 12.9142 8.75 12.5Z" />
+      </symbol>
+    </svg>
+  </body>
+</html>
